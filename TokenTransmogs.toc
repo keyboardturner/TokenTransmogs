@@ -2,7 +2,7 @@
 ## Author: Keyboardturner
 ## Version: 0.0.1
 ## Title: TokenTransmogs
-## Notes: Adds a "collected" indicator on tier token tooltips associated with each class.
+## Notes: Adds a "collected" indicator on tier token tooltips associated with each class to see which appearances you can collect.
 ## IconTexture: Interface/Icons/inv_shoulder_22.blp
 
 TokenTransmogs.lua
