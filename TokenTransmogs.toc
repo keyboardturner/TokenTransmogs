@@ -1,4 +1,4 @@
-## Interface: 110007
+## Interface: 110005
 ## Author: Keyboardturner
 ## Version: 0.0.1
 ## Title: TokenTransmogs
