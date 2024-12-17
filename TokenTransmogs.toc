@@ -1,8 +1,11 @@
-## Interface: 110005
+## Interface: 110005, 110007
 ## Author: Keyboardturner
-## Version: 0.0.1
+## Version: @project-version@
 ## Title: TokenTransmogs
 ## Notes: Adds a "collected" indicator on tier token tooltips associated with each class to see which appearances you can collect.
 ## IconTexture: Interface/Icons/inv_shoulder_22.blp
+## X-Curse-Project-ID: 1140948
+## X-WoWI-ID: 26879
+## X-Wago-ID: 4N2mpWGL
 
 TokenTransmogs.lua
