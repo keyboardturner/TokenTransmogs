@@ -45,7 +45,7 @@ end
 
 TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, _OnTooltipSetItem);
 -- end of debug
-]]
+--]]
 
 
 local itemData = {};
@@ -110,20 +110,25 @@ end
 local ItemContextNameTranslator = EnumUtil.GenerateNameTranslation(Enum.ItemCreationContext);
 
 local function GetItemContextFromLink(itemLink)
+	if not itemLink then return end;
 	local _, linkData = LinkUtil.ExtractLink(itemLink);
+	--DevTools_Dump(strsplittable(":", linkData));
 	local itemContext = select(12, strsplit(":", linkData));
 	itemContext = tonumber(itemContext);
+	if not itemContext then return end;
 	return itemContext;
 end
 
 local function GetCollectionInfoForToken(itemLink)
+	if not itemLink then return end;
 	local tokenID = tonumber(strmatch(itemLink, "item:(%d+)"));
 	local itemInfo = tokenID and itemData[tokenID];
 	if itemInfo then
 		local itemContext = GetItemContextFromLink(itemLink);
+		if not itemContext then return end;
 		local difficultyName = ItemContextNameTranslator(itemContext);
 		local appearances = itemInfo.Items[itemContext];
-		if not appearances then return end
+		if not appearances then return end;
 
 		local classGroup = itemInfo.Classes;
 		local linkReceived = true;
@@ -183,7 +188,7 @@ end
 KBTUI_GetCollectionInfoForToken = GetCollectionInfoForToken;	--Globals
 
 local function OnTooltipSetItem(tooltip)
-	if not tooltip.GetItem then return end;		--Change GameTooltip to tooltip so it covers ItemRefTooltip
+	if not tooltip or not tooltip.GetItem then return end;		--Change GameTooltip to tooltip so it covers ItemRefTooltip
 	local _, itemLink = tooltip:GetItem();
 	if not itemLink then return end;
 
@@ -215,6 +220,7 @@ local RAID_MYTHIC = Enum.ItemCreationContext.RaidMythic;
 local RAID_FINDER_EXT = Enum.ItemCreationContext.RaidFinderExtended;
 local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
 local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
+local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
 
 
 --SLs/Dragonflight+
@@ -5843,6 +5849,65 @@ itemData = {
 			},
 		},
 		Classes = CLASS_GROUP_7,
+	},
+
+
+	-- Blackrock Foundry
+
+	[120252] = {
+		Items = {
+			[QUESTREWARD] = { -- QUESTREWARD
+				23156, 23912, 23676, 23638, -- Warrior, Hunter, Shaman, Monk Chest Slot IDs
+			},
+			[RAID_MYTHIC] = { -- RAID_MYTHIC
+				23156, 23912, 23676, 23638,
+			},
+		},
+		Classes = CLASS_GROUP_6,
+	},
+	[120253] = {
+		Items = {
+			[QUESTREWARD] = { -- QUESTREWARD
+				23157, 23913, 23677, 23470, -- Warrior, Hunter, Shaman, Monk Hand Slot IDs
+			},
+			[RAID_MYTHIC] = { -- RAID_MYTHIC
+				23157, 23913, 23677, 23470,
+			},
+		},
+		Classes = CLASS_GROUP_6,
+	},
+	[120255] = {
+		Items = {
+			[QUESTREWARD] = { -- QUESTREWARD
+				23151, 23914, 23678, 23471, -- Warrior, Hunter, Shaman, Monk Head Slot IDs
+			},
+			[RAID_MYTHIC] = { -- RAID_MYTHIC
+				23151, 23914, 23678, 23471,
+			},
+		},
+		Classes = CLASS_GROUP_6,
+	},
+	[120254] = {
+		Items = {
+			[QUESTREWARD] = { -- QUESTREWARD
+				23158, 23919, 23472, 23689, -- Warrior, Hunter, Shaman, Monk Leg Slot IDs
+			},
+			[RAID_MYTHIC] = { -- RAID_MYTHIC
+				23158, 23919, 23472, 23689,
+			},
+		},
+		Classes = CLASS_GROUP_6,
+	},
+	[120256] = {
+		Items = {
+			[QUESTREWARD] = { -- QUESTREWARD
+				23152, 23920, 23679, 23473, -- Warrior, Hunter, Shaman, Monk Shoulder Slot IDs
+			},
+			[RAID_MYTHIC] = { -- RAID_MYTHIC
+				23152, 23920, 23679, 23473,
+			},
+		},
+		Classes = CLASS_GROUP_6,
 	},
 
 };
