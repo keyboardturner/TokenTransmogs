@@ -3,7 +3,7 @@ local GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
---[[
+--
 -- debug, do not add to final version
 local idEditBox = CreateFrame("EditBox", "AppearanceIDEditBox", UIParent, "InputBoxTemplate");
 idEditBox:SetSize(500, 45);
@@ -221,6 +221,7 @@ local RAID_FINDER_EXT = Enum.ItemCreationContext.RaidFinderExtended;
 local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
 local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
 local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
+local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
 
 
 --SLs/Dragonflight+
@@ -3416,6 +3417,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				19943, 20040, 19972,
 			},
+			[RAID_HEROIC_EXT] = {
+				19943, 20040, 19972,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -3425,6 +3429,9 @@ itemData = {
 				19945, 20036, 19975,
 			},
 			[RAID_MYTHIC] = {
+				19945, 20036, 19975,
+			},
+			[RAID_HEROIC_EXT] = {
 				19945, 20036, 19975,
 			},
 		},
@@ -3438,6 +3445,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				19941, 20038, 19974,
 			},
+			[RAID_HEROIC_EXT] = {
+				19941, 20038, 19974,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -3449,6 +3459,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				19942, 20039, 19971,
 			},
+			[RAID_HEROIC_EXT] = {
+				19942, 20039, 19971,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -3458,6 +3471,9 @@ itemData = {
 				19944, 20041, 19973,
 			},
 			[RAID_MYTHIC] = {
+				19944, 20041, 19973,
+			},
+			[RAID_HEROIC_EXT] = {
 				19944, 20041, 19973,
 			},
 		},
@@ -3472,6 +3488,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				20176, 19928, 20350, 20249,
 			},
+			[RAID_HEROIC_EXT] = {
+				20176, 19928, 20350, 20249,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -3481,6 +3500,9 @@ itemData = {
 				20178, 19930, 20352, 20254,
 			},
 			[RAID_MYTHIC] = {
+				20178, 19930, 20352, 20254,
+			},
+			[RAID_HEROIC_EXT] = {
 				20178, 19930, 20352, 20254,
 			},
 		},
@@ -3494,6 +3516,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				20174, 19926, 20353, 20251,
 			},
+			[RAID_HEROIC_EXT] = {
+				20174, 19926, 20353, 20251,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -3505,6 +3530,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				20175, 19927, 20349, 20252,
 			},
+			[RAID_HEROIC_EXT] = {
+				20175, 19927, 20349, 20252,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -3514,6 +3542,9 @@ itemData = {
 				20177, 19929, 20351, 20253,
 			},
 			[RAID_MYTHIC] = {
+				20177, 19929, 20351, 20253,
+			},
+			[RAID_HEROIC_EXT] = {
 				20177, 19929, 20351, 20253,
 			},
 		},
@@ -3528,6 +3559,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				20090, 20126, 20221, 19840,
 			},
+			[RAID_HEROIC_EXT] = {
+				20090, 20126, 20221, 19840,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -3537,6 +3571,9 @@ itemData = {
 				20095, 20128, 20217, 19842,
 			},
 			[RAID_MYTHIC] = {
+				20095, 20128, 20217, 19842,
+			},
+			[RAID_HEROIC_EXT] = {
 				20095, 20128, 20217, 19842,
 			},
 		},
@@ -3550,6 +3587,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				20092, 20124, 20219, 19844,
 			},
+			[RAID_HEROIC_EXT] = {
+				20092, 20124, 20219, 19844,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -3561,6 +3601,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				20093, 20125, 20220, 19839,
 			},
+			[RAID_HEROIC_EXT] = {
+				20093, 20125, 20220, 19839,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -3570,6 +3613,9 @@ itemData = {
 				20094, 20127, 20222, 19841,
 			},
 			[RAID_MYTHIC] = {
+				20094, 20127, 20222, 19841,
+			},
+			[RAID_HEROIC_EXT] = {
 				20094, 20127, 20222, 19841,
 			},
 		},
@@ -5178,7 +5224,12 @@ itemData = {
 				11421, 11427, 11443, -- Paladin, Priest, Warlock Head Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11668, 11678, 11657,
+				11421, 11427, 11443,
+			},
+			[RAID_MYTHIC] = {
+				11421, 11427, 11443,
+			},
+			[RAID_HEROIC] = {
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5189,7 +5240,13 @@ itemData = {
 				11422, 11431, 11447, -- Paladin, Priest, Warlock Shoulder Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11664, 11675, 11655,
+				11422, 11431, 11447,
+			},
+			[RAID_MYTHIC] = {
+				11422, 11431, 11447,
+			},
+			[RAID_HEROIC] = {
+				11422, 11431, 11447,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5200,7 +5257,13 @@ itemData = {
 				11423, 11430, 11446, -- Paladin, Priest, Warlock Chest Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11666, 11676, 11656,
+				11423, 11430, 11446,
+			},
+			[RAID_MYTHIC] = {
+				11423, 11430, 11446,
+			},
+			[RAID_HEROIC] = {
+				11423, 11430, 11446,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5211,7 +5274,13 @@ itemData = {
 				11419, 11428, 11444, -- Paladin, Priest, Warlock Hand Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11667, 11674, 11654,
+				11419, 11428, 11444,
+			},
+			[RAID_MYTHIC] = {
+				11419, 11428, 11444,
+			},
+			[RAID_HEROIC] = {
+				11419, 11428, 11444,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5222,7 +5291,13 @@ itemData = {
 				11420, 11429, 11445, -- Paladin, Priest, Warlock Leg Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11665, 11677, 11566,
+				11420, 11429, 11445,
+			},
+			[RAID_MYTHIC] = {
+				11420, 11429, 11445,
+			},
+			[RAID_HEROIC] = {
+				11420, 11429, 11445,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5234,7 +5309,13 @@ itemData = {
 				11450, 11411, 11438, -- Warrior, Hunter, Shaman Head Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11663, 11659, 11681,
+				11450, 11411, 11438,
+			},
+			[RAID_MYTHIC] = {
+				11450, 11411, 11438,
+			},
+			[RAID_HEROIC] = {
+				11450, 11411, 11438,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5245,7 +5326,13 @@ itemData = {
 				11453, 11413, 11440, -- Warrior, Hunter, Shaman Shoulder Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11662, 11660, 11683,
+				11453, 11413, 11440,
+			},
+			[RAID_MYTHIC] = {
+				11453, 11413, 11440,
+			},
+			[RAID_HEROIC] = {
+				11453, 11413, 11440,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5256,7 +5343,13 @@ itemData = {
 				11449, 11414, 11441, -- Warrior, Hunter, Shaman Chest Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11661, 11658, 11679,
+				11449, 11414, 11441,
+			},
+			[RAID_MYTHIC] = {
+				11449, 11414, 11441,
+			},
+			[RAID_HEROIC] = {
+				11449, 11414, 11441,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5267,7 +5360,13 @@ itemData = {
 				11451, 11410, 11437, -- Warrior, Hunter, Shaman Hand Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11560, 11561, 11680,
+				11451, 11410, 11437,
+			},
+			[RAID_MYTHIC] = {
+				11451, 11410, 11437,
+			},
+			[RAID_HEROIC] = {
+				11451, 11410, 11437,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5278,7 +5377,13 @@ itemData = {
 				11452, 11412, 11439, -- Warrior, Hunter, Shaman Leg Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11563, 11565, 11682,
+				11452, 11412, 11439,
+			},
+			[RAID_MYTHIC] = {
+				11452, 11412, 11439,
+			},
+			[RAID_HEROIC] = {
+				11452, 11412, 11439,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5290,7 +5395,13 @@ itemData = {
 				11434, 11400, 11415, 11405, -- Rogue, Death-Knight, Mage, Druid Head Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11647, 10325, 11650, 11673,
+				11434, 11400, 11415, 11405,
+			},
+			[RAID_MYTHIC] = {
+				11434, 11400, 11415, 11405,
+			},
+			[RAID_HEROIC] = {
+				11434, 11400, 11415, 11405,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -5301,7 +5412,13 @@ itemData = {
 				11436, 11403, 11418, 11408, -- Rogue, Death-Knight, Mage, Druid Shoulder Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11649, 10328, 10463, 11669,
+				11436, 11403, 11418, 11408,
+			},
+			[RAID_MYTHIC] = {
+				11436, 11403, 11418, 11408,
+			},
+			[RAID_HEROIC] = {
+				11436, 11403, 11418, 11408,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -5312,7 +5429,13 @@ itemData = {
 				11432, 11399, 11417, 11409, -- Rogue, Death-Knight, Mage, Druid Chest Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11645, 10326, 11651, 11671,
+				11432, 11399, 11417, 11409,
+			},
+			[RAID_MYTHIC] = {
+				11432, 11399, 11417, 11409,
+			},
+			[RAID_HEROIC] = {
+				11432, 11399, 11417, 11409,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -5323,7 +5446,13 @@ itemData = {
 				11433, 11401, 11652, 11404, -- Rogue, Death-Knight, Mage, Druid Hand Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11646, 10329, 10461, 11670,
+				11433, 11401, 11652, 11404,
+			},
+			[RAID_MYTHIC] = {
+				11433, 11401, 11652, 11404,
+			},
+			[RAID_HEROIC] = {
+				11433, 11401, 11652, 11404,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -5334,7 +5463,13 @@ itemData = {
 				11435, 11402, 11416, 11406, -- Rogue, Death-Knight, Mage, Druid Leg Slot IDs
 			},
 			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11648, 10327, 11653, 11672,
+				11435, 11402, 11416, 11406,
+			},
+			[RAID_MYTHIC] = {
+				11435, 11402, 11416, 11406,
+			},
+			[RAID_HEROIC] = {
+				11435, 11402, 11416, 11406,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -5346,9 +5481,15 @@ itemData = {
 	[45638] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11421, 11427, 11443, -- Paladin, Priest, Warlock Head Slot IDs
+				11668, 11678, 11657, -- Paladin, Priest, Warlock Head Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11668, 11678, 11657,
+			},
+			[RAID_MYTHIC] = {
+				11668, 11678, 11657,
+			},
+			[RAID_HEROIC] = {
 				11668, 11678, 11657,
 			},
 		},
@@ -5357,9 +5498,15 @@ itemData = {
 	[45656] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11422, 11431, 11447, -- Paladin, Priest, Warlock Shoulder Slot IDs
+				11664, 11675, 11655, -- Paladin, Priest, Warlock Shoulder Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11664, 11675, 11655,
+			},
+			[RAID_MYTHIC] = {
+				11664, 11675, 11655,
+			},
+			[RAID_HEROIC] = {
 				11664, 11675, 11655,
 			},
 		},
@@ -5368,9 +5515,15 @@ itemData = {
 	[45632] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11423, 11430, 11446, -- Paladin, Priest, Warlock Chest Slot IDs
+				11666, 11676, 11656, -- Paladin, Priest, Warlock Chest Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11666, 11676, 11656,
+			},
+			[RAID_MYTHIC] = {
+				11666, 11676, 11656,
+			},
+			[RAID_HEROIC] = {
 				11666, 11676, 11656,
 			},
 		},
@@ -5379,9 +5532,15 @@ itemData = {
 	[45641] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11419, 11428, 11444, -- Paladin, Priest, Warlock Hand Slot IDs
+				11667, 11674, 11654, -- Paladin, Priest, Warlock Hand Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11667, 11674, 11654,
+			},
+			[RAID_MYTHIC] = {
+				11667, 11674, 11654,
+			},
+			[RAID_HEROIC] = {
 				11667, 11674, 11654,
 			},
 		},
@@ -5390,9 +5549,15 @@ itemData = {
 	[45653] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11420, 11429, 11445, -- Paladin, Priest, Warlock Leg Slot IDs
+				11665, 11677, 11566, -- Paladin, Priest, Warlock Leg Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11665, 11677, 11566,
+			},
+			[RAID_MYTHIC] = {
+				11665, 11677, 11566,
+			},
+			[RAID_HEROIC] = {
 				11665, 11677, 11566,
 			},
 		},
@@ -5402,9 +5567,15 @@ itemData = {
 	[45639] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11450, 11411, 11438, -- Warrior, Hunter, Shaman Head Slot IDs
+				11663, 11659, 11681, -- Warrior, Hunter, Shaman Head Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11663, 11659, 11681,
+			},
+			[RAID_MYTHIC] = {
+				11663, 11659, 11681,
+			},
+			[RAID_HEROIC] = {
 				11663, 11659, 11681,
 			},
 		},
@@ -5413,9 +5584,15 @@ itemData = {
 	[45657] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11453, 11413, 11440, -- Warrior, Hunter, Shaman Shoulder Slot IDs
+				11662, 11660, 11683, -- Warrior, Hunter, Shaman Shoulder Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11662, 11660, 11683,
+			},
+			[RAID_MYTHIC] = {
+				11662, 11660, 11683,
+			},
+			[RAID_HEROIC] = {
 				11662, 11660, 11683,
 			},
 		},
@@ -5424,9 +5601,15 @@ itemData = {
 	[45633] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11449, 11414, 11441, -- Warrior, Hunter, Shaman Chest Slot IDs
+				11661, 11658, 11679, -- Warrior, Hunter, Shaman Chest Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11661, 11658, 11679,
+			},
+			[RAID_MYTHIC] = {
+				11661, 11658, 11679,
+			},
+			[RAID_HEROIC] = {
 				11661, 11658, 11679,
 			},
 		},
@@ -5435,9 +5618,15 @@ itemData = {
 	[45642] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11451, 11410, 11437, -- Warrior, Hunter, Shaman Hand Slot IDs
+				11560, 11561, 11680, -- Warrior, Hunter, Shaman Hand Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11560, 11561, 11680,
+			},
+			[RAID_MYTHIC] = {
+				11560, 11561, 11680,
+			},
+			[RAID_HEROIC] = {
 				11560, 11561, 11680,
 			},
 		},
@@ -5446,9 +5635,15 @@ itemData = {
 	[45654] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11452, 11412, 11439, -- Warrior, Hunter, Shaman Leg Slot IDs
+				11563, 11565, 11682, -- Warrior, Hunter, Shaman Leg Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11563, 11565, 11682,
+			},
+			[RAID_MYTHIC] = {
+				11563, 11565, 11682,
+			},
+			[RAID_HEROIC] = {
 				11563, 11565, 11682,
 			},
 		},
@@ -5458,9 +5653,15 @@ itemData = {
 	[45640] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11434, 11400, 11415, 11405, -- Rogue, Death-Knight, Mage, Druid Head Slot IDs
+				11647, 10325, 11650, 11673, -- Rogue, Death-Knight, Mage, Druid Head Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11647, 10325, 11650, 11673,
+			},
+			[RAID_MYTHIC] = {
+				11647, 10325, 11650, 11673,
+			},
+			[RAID_HEROIC] = {
 				11647, 10325, 11650, 11673,
 			},
 		},
@@ -5469,9 +5670,15 @@ itemData = {
 	[45658] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11436, 11403, 11418, 11408, -- Rogue, Death-Knight, Mage, Druid Shoulder Slot IDs
+				11649, 10328, 10463, 11669, -- Rogue, Death-Knight, Mage, Druid Shoulder Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11649, 10328, 10463, 11669,
+			},
+			[RAID_MYTHIC] = {
+				11649, 10328, 10463, 11669,
+			},
+			[RAID_HEROIC] = {
 				11649, 10328, 10463, 11669,
 			},
 		},
@@ -5480,9 +5687,15 @@ itemData = {
 	[45634] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11432, 11399, 11417, 11409, -- Rogue, Death-Knight, Mage, Druid Chest Slot IDs
+				11645, 10326, 11651, 11671, -- Rogue, Death-Knight, Mage, Druid Chest Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11645, 10326, 11651, 11671,
+			},
+			[RAID_MYTHIC] = {
+				11645, 10326, 11651, 11671,
+			},
+			[RAID_HEROIC] = {
 				11645, 10326, 11651, 11671,
 			},
 		},
@@ -5491,9 +5704,15 @@ itemData = {
 	[45643] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11433, 11401, 11652, 11404, -- Rogue, Death-Knight, Mage, Druid Hand Slot IDs
+				11646, 10329, 10461, 11670, -- Rogue, Death-Knight, Mage, Druid Hand Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11646, 10329, 10461, 11670,
+			},
+			[RAID_MYTHIC] = {
+				11646, 10329, 10461, 11670,
+			},
+			[RAID_HEROIC] = {
 				11646, 10329, 10461, 11670,
 			},
 		},
@@ -5502,9 +5721,15 @@ itemData = {
 	[45655] = {
 		Items = {
 			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
-				11435, 11402, 11416, 11406, -- Rogue, Death-Knight, Mage, Druid Leg Slot IDs
+				11648, 10327, 11653, 11672, -- Rogue, Death-Knight, Mage, Druid Leg Slot IDs
 			},
 			[RAID_NORMAL] = { -- RAID_NORMAL
+				11648, 10327, 11653, 11672,
+			},
+			[RAID_MYTHIC] = {
+				11648, 10327, 11653, 11672,
+			},
+			[RAID_HEROIC] = {
 				11648, 10327, 11653, 11672,
 			},
 		},
