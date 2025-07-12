@@ -1,3 +1,7 @@
+# 0.0.7
+
+Fixes to some Ulduar and Throne of Thunder tier tokens
+
 # 0.0.6
 
 Added some nil checks so addon doesn't (shouldn't) error upon some tooltips (coincidentally triggered by altoholic in this case)
