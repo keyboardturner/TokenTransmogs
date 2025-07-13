@@ -1,6 +1,6 @@
 # 0.0.7
 
-Fixes to some Ulduar and Throne of Thunder tier tokens
+Fixes to some Ulduar and Throne of Thunder tier tokens, added Undermine Raid Tokens, added Nerubar Warbound Tokens
 
 # 0.0.6
 

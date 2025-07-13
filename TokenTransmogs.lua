@@ -222,6 +222,8 @@ local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
 local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
 local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
 local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
+local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
+local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
 
 
 --SLs/Dragonflight+
@@ -257,6 +259,11 @@ local CLASS_GROUP_21 = {1, 4, 5, 8};		--Warrior, Rogue, Priest, Mage				(Qiraji 
 local CLASS_GROUP_22 = {2, 3, 7, 9, 11};	--Paladin, Hunter, Shaman, Warlock, Druid	(Qiraji Regal Drape)
 local CLASS_GROUP_23 = {5, 8, 9, 11};		--Priest, Mage, Warlock, Druid				(Qiraji Ornate Hilt)
 local CLASS_GROUP_24 = {1, 2, 3, 4, 7};		--Warrior, Paladin, Hunter, Rogue, Shaman	(Qiraji Spiked Hilt)
+
+--Sunwell + PvP Season 3
+local CLASS_GROUP_25 = {4, 4, 8, 8, 11, 11};	--Rogue, Rogue, Mage, Mage, Druid, Druid				(PvE+PvP)
+local CLASS_GROUP_26 = {2, 2, 5, 5, 9, 9,};		--Paladin, Paladin, Priest, Priest, Warlock, Warlock	(PvE+PvP)
+
 
 
 
@@ -651,6 +658,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				91649, 93073, 91828,
 			},
+			[LegendaryCrafting_6] = {
+				91650, 93037, 91831,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -668,6 +678,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92513, 92974, 91565,
+			},
+			[LegendaryCrafting_6] = {
+				92475, 92977, 91568,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -687,6 +700,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				92047, 92301, 92824,
 			},
+			[LegendaryCrafting_6] = {
+				92027, 92270, 92802,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -704,6 +720,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92448, 92781, 92179, 92162,
+			},
+			[LegendaryCrafting_6] = {
+				92403, 92745, 92181, 92093,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -725,6 +744,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				91501, 93074, 91829,
 			},
+			[LegendaryCrafting_6] = {
+				91503, 93038, 91832,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -742,6 +764,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92514, 92975, 91566,
+			},
+			[LegendaryCrafting_6] = {
+				92476, 92978, 91569,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -761,6 +786,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				92048, 92551, 92825,
 			},
+			[LegendaryCrafting_6] = {
+				92028, 92546, 92803,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -778,6 +806,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92449, 92789, 92180, 92163,
+			},
+			[LegendaryCrafting_6] = {
+				92404, 92746, 92182, 92094,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -799,6 +830,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				91494, 93065, 91822,
 			},
+			[LegendaryCrafting_6] = {
+				91504, 93039, 91833,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -816,6 +850,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92507, 93126, 91558,
+			},
+			[LegendaryCrafting_6] = {
+				92477, 92979, 91570,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -835,6 +872,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				92040, 92400, 92823,
 			},
+			[LegendaryCrafting_6] = {
+				92029, 92271, 92811,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -852,6 +892,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92441, 92783, 92173, 92155,
+			},
+			[LegendaryCrafting_6] = {
+				92405, 92747, 92183, 92095,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -873,6 +916,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				91499, 93070, 91972,
 			},
+			[LegendaryCrafting_6] = {
+				91509, 93044, 91838,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -890,6 +936,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92512, 93120, 91563,
+			},
+			[LegendaryCrafting_6] = {
+				92482, 92984, 91575,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -909,6 +958,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				92045, 92327, 92821,
 			},
+			[LegendaryCrafting_6] = {
+				92034, 92276, 92809,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -926,6 +978,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92446, 92788, 92178, 92160,
+			},
+			[LegendaryCrafting_6] = {
+				92410, 92752, 92188, 92100,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -947,6 +1002,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				91496, 93067, 91824,
 			},
+			[LegendaryCrafting_6] = {
+				91506, 93041, 91835,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -964,6 +1022,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92509, 92969, 91560,
+			},
+			[LegendaryCrafting_6] = {
+				92479, 92981, 91572,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -983,6 +1044,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				92042, 92295, 94161,
 			},
+			[LegendaryCrafting_6] = {
+				92031, 92273, 94162,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -1000,6 +1064,9 @@ itemData = {
 			},
 			[RAID_MYTHIC] = {
 				92443, 92785, 92175, 92157,
+			},
+			[LegendaryCrafting_6] = {
+				92407, 92749, 92185, 92097,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -5230,6 +5297,7 @@ itemData = {
 				11421, 11427, 11443,
 			},
 			[RAID_HEROIC] = {
+				11421, 11427, 11443,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -6077,7 +6145,7 @@ itemData = {
 	},
 
 
-	-- Blackrock Foundry
+	-- Blackrock Foundry (INCOMPLETE)
 
 	[120252] = {
 		Items = {
@@ -6133,6 +6201,418 @@ itemData = {
 			},
 		},
 		Classes = CLASS_GROUP_6,
+	},
+
+
+	-- Sunwell (INCOMPLETE)
+
+	[34858] = {
+		Items = {
+			[RAID_HEROIC] = {
+				9011, 8802, 9010, 8810, 9009, 8796, -- Rogue, Mage, Druid Boots Boot Slot IDs
+			},
+		},
+		Classes = CLASS_GROUP_25,
+	},
+	[34852] = {
+		Items = {
+			[RAID_HEROIC] = {
+				8964, 8496, 8963, 8809, 8962, 8797, -- Rogue, Mage, Druid Boots Wrist Slot IDs
+			},
+		},
+		Classes = CLASS_GROUP_25,
+	},
+
+	[34853] = {
+		Items = {
+			[RAID_HEROIC] = {
+				8975, 8383, 8989, 8805, 8994, 8357, --Paladin, Priest, Warlock Boot Slot IDs
+			},
+		},
+		Classes = CLASS_GROUP_26,
+	},
+
+
+	-- Undermine (INCOMPLETE) 
+
+	-- death knight, warlock, demon hunter
+--[[
+95444 95445 95446 95451 95448
+95422 95423 95424 95429 95426
+95433 95434 95435 95440 95437
+95475 95476 95468 95473 95470
+
+96160 96161 96162 96167 96164
+96148 96149 96150 96155 96152
+96136 96137 96138 96143 96140
+96194 96195 96186 96191 96188
+
+95498 95499 95500 95505 95502
+95508 95509 95510 95515 95512
+95488 95489 95490 95495 95492
+95536 95537 95588 95594 95600
+]]
+
+	[228807] = { -- head
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_1,
+	},
+	[228815] = { -- shoulder
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_1,
+	},
+	[228799] = { -- chest
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_1,
+	},
+	[228803] = { -- hand
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_1,
+	},
+	[228811] = { -- leg
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_1,
+	},
+
+	-- hunter, mage, druid
+--[[
+97767 97768 97769 97774 97771
+97800 97801 97802 97807 97804
+97789 97790 97791 97796 97793
+97765 97766 97758 97763 97760
+
+96697 96693 96694 96695 96700
+96708 96704 96705 96706 96711
+96649 96650 96651 96656 96653
+96691 96692 96684 96689 96686
+
+96814 96815 96816 96821 96818
+96802 96803 96804 96809 96806
+96754 96755 96756 96761 96758
+96776 96777 96768 96773 96770
+]]
+	[228808] = { -- head
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_2,
+	},
+	[228816] = { -- shoulder
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_2,
+	},
+	[228800] = { -- chest
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_2,
+	},
+	[228804] = { -- hand
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_2,
+	},
+	[228812] = { -- leg
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_2,
+	},
+
+
+	-- paladin, priest, shaman
+--[[
+97044 97045 97046 97051 97048
+97035 97055 97036 97041 97038
+96991 96992 96993 96998 96995
+97011 97012 97004 97009 97006
+
+98996 98997 98998 99003 99000
+98985 98986 98987 98992 104693
+98952 98953 98954 98959 98956
+98950 98951 98943 98948 98945
+
+98303 98304 98305 98310 98307
+98261 98262 98263 98269 98265
+98235 98236 98237 98242 98239
+98300 98301 98292 116474 98294
+]]
+	[228809] = { -- head
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_3,
+	},
+	[228817] = { -- shoulder
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_3,
+	},
+	[228801] = { -- chest
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_3,
+	},
+	[228805] = { -- hand
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_3,
+	},
+	[228813] = { -- leg
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_3,
+	},
+
+
+	-- warrior, rogue, monk, evoker
+--[[
+98728 98729 98730 98735 98732
+98680 98681 98682 98687 98684
+98668 98669 98670 98675 98672
+98725 98726 98718 98723 98720
+
+94284 94285 94286 94291 94288
+94334 94335 94336 94341 94338
+94314 94315 94316 94321 94318
+94324 94333 94326 94331 94328
+
+96942 96943 96944 96949 96946
+96966 96967 96968 96973 96970
+96906 96907 96908 96913 96910
+96939 96940 96932 96937 96934
+
+99477 99478 99479 99484 99481
+99507 99508 99509 99514 99511
+99467 99468 99469 99474 99471
+99465 99466 99459 99464 99461
+]]
+	[228810] = { -- head
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_4,
+	},
+	[228818] = { -- shoulder
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_4,
+	},
+	[228802] = { -- chest
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_4,
+	},
+	[228806] = { -- hand
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_4,
+	},
+	[228814] = { -- leg
+		Items = {
+			[RAID_FINDER] = {
+			},
+			[RAID_NORMAL] = {
+			},
+			[RAID_HEROIC] = {
+			},
+			[RAID_MYTHIC] = {
+			},
+			[LegendaryCrafting_5] = {
+			},
+		},
+		Classes = CLASS_GROUP_4,
 	},
 
 };
