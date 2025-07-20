@@ -4626,6 +4626,78 @@ itemData = {
 
 
 
+	-- Firelands (Normal) (only helm/shoulders)
+	[71675] = {
+		Items = {
+			[RAID_NORMAL] = {
+				15681, 15761, 15821, -- Paladin, Priest, Warlock Head Slot IDs
+			},
+			[RAID_HEROIC] = {
+				15674, 15754, 15918,
+			},
+		},
+		Classes = CLASS_GROUP_5,
+	},
+	[71681] = {
+		Items = {
+			[RAID_NORMAL] = {
+				15683, 15764, 15879, -- Paladin, Priest, Warlock Shoulder Slot IDs
+			},
+			[RAID_HEROIC] = {
+				15676, 15757, 15945,
+			},
+		},
+		Classes = CLASS_GROUP_5,
+	},
+
+	[71682] = {
+		Items = {
+			[RAID_NORMAL] = {
+				15768, 15722, 15892, -- Warrior, Hunter, Shaman Head Slot IDs
+			},
+			[RAID_HEROIC] = {
+				15783, 15729, 15933,
+			},
+		},
+		Classes = CLASS_GROUP_6,
+	},
+	[71688] = {
+		Items = {
+			[RAID_NORMAL] = {
+				15638, 15723, 15814, -- Warrior, Hunter, Shaman Shoulder Slot IDs
+			},
+			[RAID_HEROIC] = {
+				15785, 15731, 15922,
+			},
+		},
+		Classes = CLASS_GROUP_6,
+	},
+
+	[71668] = {
+		Items = {
+			[RAID_NORMAL] = {
+				15642, 15635, 15707, 15829, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
+			},
+			[RAID_HEROIC] = {
+				15649, 15801, 15690, 15856,
+			},
+		},
+		Classes = CLASS_GROUP_7,
+	},
+	[71674] = {
+		Items = {
+			[RAID_NORMAL] = {
+				15644, 15795, 15710, 15826, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
+			},
+			[RAID_HEROIC] = {
+				15651, 15803, 15693, 15860,
+			},
+		},
+		Classes = CLASS_GROUP_7,
+	},
+
+
+
 	-- Firelands (Heroic)
 	[71677] = {
 		Items = {
