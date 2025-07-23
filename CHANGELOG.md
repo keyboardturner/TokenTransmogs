@@ -1,3 +1,7 @@
+# 0.0.9
+
+Added Karazhan, Grrul's Lair, Magtheridon's Lair, Serpentshrine Cavern, The Eye, Battle for Mount Hyjal, Black Temple, and Sunwell Plateau, as well as a PvP icon to indicate the vendor-bought variants.
+
 # 0.0.8
 
 Fix to some of the Firelands Normal tier tokens
