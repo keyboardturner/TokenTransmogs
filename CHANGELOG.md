@@ -1,3 +1,7 @@
+# 0.1.0
+
+Added the Blackrock Foundry tokens obtained via quest reward from the omni-token
+
 # 0.0.9
 
 Added Karazhan, Grrul's Lair, Magtheridon's Lair, Serpentshrine Cavern, The Eye, Battle for Mount Hyjal, Black Temple, and Sunwell Plateau, as well as a PvP icon to indicate the vendor-bought variants.
