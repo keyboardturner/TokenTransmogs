@@ -1,3 +1,7 @@
+# 0.1.1
+
+Fix to priest Sepulcher of the First Ones chest using chest-only version instead of robes
+
 # 0.1.0
 
 Added the Blackrock Foundry tokens obtained via quest reward from the omni-token

@@ -479,16 +479,16 @@ itemData = {
 	[191012] = {
 		Items = {
 			[RAID_FINDER] = {
-				57079, 55874, 56757, 
+				57079, 55874, 56757, -- 55881 - alternate priest chest
 			},
 			[RAID_NORMAL] = {
-				57106, 55904, 56730, 
+				57106, 55904, 56730, -- 55911 - alternate priest chest
 			},
 			[RAID_HEROIC] = {
-				57097, 55901, 56766, 
+				57097, 55894, 56766, -- 55901 - alternate priest chest
 			},
 			[RAID_MYTHIC] = {
-				57088, 55891, 56748,
+				57088, 55884, 56748, -- 55891 - alternate priest chest
 			},
 		},
 		Classes = CLASS_GROUP_3,
