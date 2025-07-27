@@ -8084,7 +8084,7 @@ itemData = {
 		},
 		Classes = CLASS_GROUP_2,
 	},
-	[237592] = { -- chest
+	[237582] = { -- chest
 		Items = {
 			[RAID_FINDER] = {
 				116780, 116920, 118345,
