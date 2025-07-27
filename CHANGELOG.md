@@ -1,3 +1,7 @@
+# 0.1.2
+
+Added Manaforge Omega tokens
+
 # 0.1.1
 
 Fix to priest Sepulcher of the First Ones chest using chest-only version instead of robes
