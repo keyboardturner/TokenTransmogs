@@ -1,3 +1,7 @@
+# 0.1.4
+
+Added items for Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj
+
 # 0.1.3
 
 11.2.0 toc update
