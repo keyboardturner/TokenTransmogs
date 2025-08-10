@@ -3,7 +3,7 @@ local GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
---[[
+--
 -- debug, do not add to final version
 local idEditBox = CreateFrame("EditBox", "AppearanceIDEditBox", UIParent, "InputBoxTemplate");
 idEditBox:SetSize(500, 45);
@@ -15,6 +15,19 @@ idEditBox:SetFontObject("GameFontHighlight");
 idEditBox:SetScript("OnEscapePressed", function(self) self:Hide() end);
 
 local collectedAppearanceIDs = {};
+
+local RAID_FINDER = Enum.ItemCreationContext.RaidFinder;
+local RAID_NORMAL = Enum.ItemCreationContext.RaidNormal;
+local RAID_HEROIC = Enum.ItemCreationContext.RaidHeroic;
+local RAID_MYTHIC = Enum.ItemCreationContext.RaidMythic;
+local RAID_FINDER_EXT = Enum.ItemCreationContext.RaidFinderExtended;
+local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
+local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
+local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
+local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
+local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
+local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
+local ANY = "ANY"
 
 idEditBox:SetScript("OnHide", function(self)
 	collectedAppearanceIDs = {};
@@ -107,7 +120,13 @@ function ClassVisual:GetClassIconMarkup(classID)
 end
 
 
-local ItemContextNameTranslator = EnumUtil.GenerateNameTranslation(Enum.ItemCreationContext);
+local _ItemContextNameTranslator = EnumUtil.GenerateNameTranslation(Enum.ItemCreationContext)
+local ItemContextNameTranslator = function(itemContext)
+    if not itemContext then
+        return ANY
+    end
+    return _ItemContextNameTranslator(itemContext)
+end
 
 local function GetItemContextFromLink(itemLink)
 	if not itemLink then return end;
@@ -125,7 +144,9 @@ local function GetCollectionInfoForToken(itemLink)
 	local itemInfo = tokenID and itemData[tokenID];
 	if itemInfo then
 		local itemContext = GetItemContextFromLink(itemLink);
-		if not itemContext then return end;
+		if not itemContext then 
+			itemContext = ANY;
+		end
 		local difficultyName = ItemContextNameTranslator(itemContext);
 		local appearances = itemInfo.Items[itemContext];
 		if not appearances then return end;
@@ -224,20 +245,6 @@ end
 
 TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem);
 
-
-
-
-local RAID_FINDER = Enum.ItemCreationContext.RaidFinder;
-local RAID_NORMAL = Enum.ItemCreationContext.RaidNormal;
-local RAID_HEROIC = Enum.ItemCreationContext.RaidHeroic;
-local RAID_MYTHIC = Enum.ItemCreationContext.RaidMythic;
-local RAID_FINDER_EXT = Enum.ItemCreationContext.RaidFinderExtended;
-local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
-local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
-local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
-local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
-local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
-local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
 
 
 --SLs/Dragonflight+
@@ -8386,6 +8393,16 @@ itemData = {
 			},
 		},
 		Classes = CLASS_GROUP_4,
+	},
+
+	--Ahn'Qiraj
+	[20926] = { -- helm
+		Items = {
+			[ANY] = {
+				5669, 5683, 5682, 5676,
+			},
+		},
+		Classes = CLASS_GROUP_14,
 	},
 
 };
