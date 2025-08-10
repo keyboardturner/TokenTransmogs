@@ -1,3 +1,7 @@
+# 0.1.5
+
+Fixed mythic Sepulcher of the First Ones legs token for monk and fixed data to show up on tokens obtained in Throne of the Four Winds.
+
 # 0.1.4
 
 Added items for Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj

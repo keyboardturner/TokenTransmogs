@@ -660,7 +660,7 @@ itemData = {
 				56405, 56067, 56516,
 			},
 			[RAID_MYTHIC] = {
-				56091, 56396, 56525,
+				56091, 56396, 56507,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -4895,13 +4895,16 @@ itemData = {
 
 
 
-	-- Bastion of Twilight (Normal) (these items are "removed" and weird but show in journals)
+	-- Bastion of Twilight / Throne of the Four Winds (Normal)
 	[63683] = {
 		Items = {
 			[RAID_FINDER] = {
 				14049, 14024, 14098, -- Paladin, Priest, Warlock Head Slot IDs
 			},
 			[RAID_HEROIC] = {
+				14049, 14024, 14098,
+			},
+			[RAID_FINDER_EXT] = {
 				14049, 14024, 14098,
 			},
 		},
@@ -4916,6 +4919,9 @@ itemData = {
 			[RAID_HEROIC] = {
 				13974, 13993, 14099,
 			},
+			[RAID_FINDER_EXT] = {
+				13974, 13993, 14099,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -4928,6 +4934,9 @@ itemData = {
 			[RAID_HEROIC] = {
 				13997, 14048, 14036,
 			},
+			[RAID_FINDER_EXT] = {
+				13997, 14048, 14036,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -4937,6 +4946,9 @@ itemData = {
 				14004, 13964, 14050, -- Warrior, Hunter, Shaman Shoulder Slot IDs
 			},
 			[RAID_HEROIC] = {
+				14004, 13964, 14050,
+			},
+			[RAID_FINDER_EXT] = {
 				14004, 13964, 14050,
 			},
 		},
@@ -4951,6 +4963,9 @@ itemData = {
 			[RAID_HEROIC] = {
 				14041, 14040, 13963, 13975,
 			},
+			[RAID_FINDER_EXT] = {
+				14041, 14040, 13963, 13975,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -4960,6 +4975,9 @@ itemData = {
 				13950, 14082, 13984, 13962, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
 			},
 			[RAID_HEROIC] = {
+				13950, 14082, 13984, 13962,
+			},
+			[RAID_FINDER_EXT] = {
 				13950, 14082, 13984, 13962,
 			},
 		},
@@ -4975,6 +4993,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14755, 14710, 14775,
 			},
+			[RAID_FINDER] = {
+				14755, 14710, 14775,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -4984,6 +5005,9 @@ itemData = {
 				14738, 14723, 14776,
 			},
 			[RAID_MYTHIC] = {
+				14738, 14723, 14776,
+			},
+			[RAID_FINDER] = {
 				14738, 14723, 14776,
 			},
 		},
@@ -4997,6 +5021,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14722, 14763, 14705,
 			},
+			[RAID_FINDER] = {
+				14722, 14763, 14705,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -5008,6 +5035,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14715, 14736, 14759,
 			},
+			[RAID_FINDER] = {
+				14715, 14736, 14759,
+			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
@@ -5017,6 +5047,9 @@ itemData = {
 				14765, 14716, 14724,
 			},
 			[RAID_MYTHIC] = {
+				14765, 14716, 14724,
+			},
+			[RAID_FINDER] = {
 				14765, 14716, 14724,
 			},
 		},
@@ -5031,6 +5064,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14719, 14757, 14764,
 			},
+			[RAID_FINDER] = {
+				14719, 14757, 14764,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -5040,6 +5076,9 @@ itemData = {
 				14712, 14743, 14754,
 			},
 			[RAID_MYTHIC] = {
+				14712, 14743, 14754,
+			},
+			[RAID_FINDER] = {
 				14712, 14743, 14754,
 			},
 		},
@@ -5053,6 +5092,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14761, 14718, 14703,
 			},
+			[RAID_FINDER] = {
+				14761, 14718, 14703,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -5064,6 +5106,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14741, 14767, 14730,
 			},
+			[RAID_FINDER] = {
+				14741, 14767, 14730,
+			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
@@ -5073,6 +5118,9 @@ itemData = {
 				14758, 14090, 14751,
 			},
 			[RAID_MYTHIC] = {
+				14758, 14090, 14751,
+			},
+			[RAID_FINDER] = {
 				14758, 14090, 14751,
 			},
 		},
@@ -5087,6 +5135,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14760, 14749, 14095, 14737,
 			},
+			[RAID_FINDER] = {
+				14760, 14749, 14095, 14737,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -5096,6 +5147,9 @@ itemData = {
 				14746, 14752, 14729, 14706,
 			},
 			[RAID_MYTHIC] = {
+				14746, 14752, 14729, 14706,
+			},
+			[RAID_FINDER] = {
 				14746, 14752, 14729, 14706,
 			},
 		},
@@ -5109,6 +5163,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14731, 14733, 14709, 14725,
 			},
+			[RAID_FINDER] = {
+				14731, 14733, 14709, 14725,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -5120,6 +5177,9 @@ itemData = {
 			[RAID_MYTHIC] = {
 				14742, 14772, 14773, 14753,
 			},
+			[RAID_FINDER] = {
+				14742, 14772, 14773, 14753,
+			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
@@ -5129,6 +5189,9 @@ itemData = {
 				14720, 14732, 14774, 14714,
 			},
 			[RAID_MYTHIC] = {
+				14720, 14732, 14774, 14714,
+			},
+			[RAID_FINDER] = {
 				14720, 14732, 14774, 14714,
 			},
 		},
