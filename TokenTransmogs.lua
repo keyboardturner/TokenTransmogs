@@ -3,7 +3,7 @@ local GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
---
+--[[
 -- debug, do not add to final version
 local idEditBox = CreateFrame("EditBox", "AppearanceIDEditBox", UIParent, "InputBoxTemplate");
 idEditBox:SetSize(500, 45);
@@ -15,19 +15,6 @@ idEditBox:SetFontObject("GameFontHighlight");
 idEditBox:SetScript("OnEscapePressed", function(self) self:Hide() end);
 
 local collectedAppearanceIDs = {};
-
-local RAID_FINDER = Enum.ItemCreationContext.RaidFinder;
-local RAID_NORMAL = Enum.ItemCreationContext.RaidNormal;
-local RAID_HEROIC = Enum.ItemCreationContext.RaidHeroic;
-local RAID_MYTHIC = Enum.ItemCreationContext.RaidMythic;
-local RAID_FINDER_EXT = Enum.ItemCreationContext.RaidFinderExtended;
-local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
-local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
-local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
-local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
-local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
-local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
-local ANY = "ANY"
 
 idEditBox:SetScript("OnHide", function(self)
 	collectedAppearanceIDs = {};
@@ -60,6 +47,18 @@ TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, _OnTooltipSet
 -- end of debug
 --]]
 
+local RAID_FINDER = Enum.ItemCreationContext.RaidFinder;
+local RAID_NORMAL = Enum.ItemCreationContext.RaidNormal;
+local RAID_HEROIC = Enum.ItemCreationContext.RaidHeroic;
+local RAID_MYTHIC = Enum.ItemCreationContext.RaidMythic;
+local RAID_FINDER_EXT = Enum.ItemCreationContext.RaidFinderExtended;
+local RAID_NORMAL_10 = Enum.ItemCreationContext.RaidFinder;
+local RAID_NORMAL_25 = Enum.ItemCreationContext.RaidHeroic;
+local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
+local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
+local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
+local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
+local ANY = "ANY"
 
 local itemData = {};
 
@@ -264,22 +263,22 @@ local CLASS_GROUP_9 = {1, 5, 11};		--Warrior, Priest, Druid
 local CLASS_GROUP_10 = {3, 8, 9};		--Hunter, Mage, Warlock
 
 --Vanilla(AQ40)
-local CLASS_GROUP_11 = {1, 3, 4, 5};		--Warrior, Hunter, Rogue, Priest 			(Qiraji Bindings of Command)
-local CLASS_GROUP_12 = {2, 7, 8, 9, 11};	--Paladin, Shaman, Mage, Warlock, Druid		(Qiraji Bindings of Dominance)
-local CLASS_GROUP_13 = {1, 3, 4, 7, 11};	--Paladin, Hunter, Rogue, Shaman, Druid		(Vek'lore's Diadem)
-local CLASS_GROUP_14 = {1, 5, 8, 9};		--Warrior, Priest, Mage, Warlock			(Vek'nilash's Circlet)
-local CLASS_GROUP_15 = {1, 4, 5, 8};		--Warrior, Rogue, Priest, Mage				(Ouro's Intact Hide)
-local CLASS_GROUP_16 = {2, 3, 7, 11};		--Paladin, Hunter, Shaman, Warlock, Druid	(Skin of the Great Sandworm)
-local CLASS_GROUP_17 = {1, 2, 3, 4, 7};		--Warrior, Paladin, Hunter, Rogue, Shaman	(Carapace of the Old God)
-local CLASS_GROUP_18 = {5, 8, 9, 11};		--Priest, Mage, Warlock, Druid				(Husk of the Old God)
+local CLASS_GROUP_11 = {1, 1, 3, 3, 4, 4, 5, 5};			--Warrior, Hunter, Rogue, Priest 				(Qiraji Bindings of Command - 20928)
+local CLASS_GROUP_12 = {2, 2, 7, 7, 8, 8, 9, 9, 11, 11};	--Paladin, Shaman, Mage, Warlock, Druid			(Qiraji Bindings of Dominance - 20932)
+local CLASS_GROUP_13 = {1, 3, 4, 7, 11};					--Paladin, Hunter, Rogue, Shaman, Druid			(Vek'lor's Diadem - 20930)
+local CLASS_GROUP_14 = {1, 5, 8, 9};						--Warrior, Priest, Mage, Warlock				(Vek'nilash's Circlet - 20926)
+local CLASS_GROUP_15 = {1, 4, 5, 8};						--Warrior, Rogue, Priest, Mage					(Ouro's Intact Hide - 20927)
+local CLASS_GROUP_16 = {2, 3, 7, 11};						--Paladin, Hunter, Shaman, Warlock, Druid		(Skin of the Great Sandworm - 20931)
+local CLASS_GROUP_17 = {1, 2, 3, 4, 7};						--Warrior, Paladin, Hunter, Rogue, Shaman		(Carapace of the Old God - 20929)
+local CLASS_GROUP_18 = {5, 8, 9, 11};						--Priest, Mage, Warlock, Druid					(Husk of the Old God - 20933)
 
 --Vanilla(AQ10)
-local CLASS_GROUP_19 = {3, 4, 5, 9};		--Hunter, Rogue, Priest, Warlock			(Qiraji Ceremonial Ring)
-local CLASS_GROUP_20 = {1, 2, 7, 8, 11};	--Warrior, Paladin, Shaman, Mage, Druid		(Qiraji Magisterial Ring)
-local CLASS_GROUP_21 = {1, 4, 5, 8};		--Warrior, Rogue, Priest, Mage				(Qiraji Martial Drape)
-local CLASS_GROUP_22 = {2, 3, 7, 9, 11};	--Paladin, Hunter, Shaman, Warlock, Druid	(Qiraji Regal Drape)
-local CLASS_GROUP_23 = {5, 8, 9, 11};		--Priest, Mage, Warlock, Druid				(Qiraji Ornate Hilt)
-local CLASS_GROUP_24 = {1, 2, 3, 4, 7};		--Warrior, Paladin, Hunter, Rogue, Shaman	(Qiraji Spiked Hilt)
+local CLASS_GROUP_19 = {3, 4, 5, 9};						--Hunter, Rogue, Priest, Warlock				(Qiraji Ceremonial Ring - NO APPEARANCES)
+local CLASS_GROUP_20 = {1, 2, 7, 8, 11};					--Warrior, Paladin, Shaman, Mage, Druid			(Qiraji Magisterial Ring - NO APPEARANCES)
+local CLASS_GROUP_21 = {1, 4, 5, 8};						--Warrior, Rogue, Priest, Mage					(Qiraji Martial Drape - 20885)
+local CLASS_GROUP_22 = {2, 3, 7, 9, 11};					--Paladin, Hunter, Shaman, Warlock, Druid		(Qiraji Regal Drape - 20889)
+local CLASS_GROUP_23 = {5, 8, 9, 11};						--Priest, Mage, Warlock, Druid					(Qiraji Ornate Hilt - 20890)
+local CLASS_GROUP_24 = {1, 2, 3, 4, 7};						--Warrior, Paladin, Hunter, Rogue, Shaman		(Qiraji Spiked Hilt - 20886)
 
 --Hyjal/Black Temple/Sunwell + PvP Season 3
 local CLASS_GROUP_25 = {4, "4-pvp", 8, "8-pvp", 11, "11-pvp"};		--Rogue, Rogue, Mage, Mage, Druid, Druid				(PvE+PvP)
@@ -8395,14 +8394,163 @@ itemData = {
 		Classes = CLASS_GROUP_4,
 	},
 
-	--Ahn'Qiraj
-	[20926] = { -- helm
+	--Ahn'Qiraj 40
+	[20928] = { -- feet, shoulders
 		Items = {
+			[RAID_NORMAL] = {
+				5673, 5670, 5697, 5699, 5692, 5694, 5684, 5685,
+			},
+			[ANY] = {
+				5673, 5670, 5697, 5699, 5692, 5694, 5684, 5685,
+			},
+		},
+		Classes = CLASS_GROUP_11,
+	},
+	[20932] = { -- feet, shoulders
+		Items = {
+			[RAID_NORMAL] = {
+				5708, 5711, 5703, 5706, 5680, 5681, 5677, 5675, 5689, 5688,
+			},
+			[ANY] = {
+				5708, 5711, 5703, 5706, 5680, 5681, 5677, 5675, 5689, 5688,
+			},
+		},
+		Classes = CLASS_GROUP_12,
+	},
+	[20930] = { -- head
+		Items = {
+			[RAID_NORMAL] = {
+				5707, 5698, 5693, 5702, 5687,
+			},
+			[ANY] = {
+				5707, 5698, 5693, 5702, 5687,
+			},
+		},
+		Classes = CLASS_GROUP_13,
+	},
+	[20926] = { -- head
+		Items = {
+			[RAID_NORMAL] = {
+				5669, 5683, 5682, 5676,
+			},
 			[ANY] = {
 				5669, 5683, 5682, 5676,
 			},
 		},
 		Classes = CLASS_GROUP_14,
 	},
+	[20927] = { -- legs
+		Items = {
+			[RAID_NORMAL] = {
+				5672, 5695, 3512, 1475,
+			},
+			[ANY] = {
+				5672, 5695, 3512, 1475,
+			},
+		},
+		Classes = CLASS_GROUP_15,
+	},
+	[20931] = { -- legs
+		Items = {
+			[RAID_NORMAL] = {
+				5710, 5700, 5705, 3128, 5690,
+			},
+			[ANY] = {
+				5710, 5700, 5705, 3128, 5690,
+			},
+		},
+		Classes = CLASS_GROUP_16,
+	},
+	[20929] = { -- chest
+		Items = {
+			[RAID_NORMAL] = {
+				5671, 5709, 5701, 5696, 5704,
+			},
+			[ANY] = {
+				5671, 5709, 5701, 5696, 5704,
+			},
+		},
+		Classes = CLASS_GROUP_17,
+	},
+	[20933] = { -- chest
+		Items = {
+			[RAID_NORMAL] = {
+				5686, 5679, 5674, 5691,
+			},
+			[ANY] = {
+				5686, 5679, 5674, 5691,
+			},
+		},
+		Classes = CLASS_GROUP_18,
+	},
+
+	--Ahn'Qiraj 20
+	[20885] = { -- back
+		Items = {
+			[RAID_FINDER] = {
+				3841, 1832, 2409, 2437,
+			},
+			[ANY] = {
+				3841, 1832, 2409, 2437,
+			},
+		},
+		Classes = CLASS_GROUP_21,
+	},
+	[20889] = { -- back
+		Items = {
+			[RAID_FINDER] = {
+				5714, 5716, 2676, 3006, 2979,
+			},
+			[ANY] = {
+				5714, 5716, 2676, 3006, 2979,
+			},
+		},
+		Classes = CLASS_GROUP_22,
+	},
+	[20890] = { -- weapon
+		Items = {
+			[RAID_FINDER] = {
+				5715, 5713, 5717, 5715,
+			},
+			[ANY] = {
+				5715, 5713, 5717, 5715,
+			},
+		},
+		Classes = CLASS_GROUP_23,
+	},
+	[20886] = { -- weapon
+		Items = {
+			[RAID_FINDER] = {
+				5712, 5713, 5712, 5717, 5715,
+			},
+			[ANY] = {
+				5712, 5713, 5712, 5717, 5715,
+			},
+		},
+		Classes = CLASS_GROUP_24,
+	},
+
+	--Ahn'Qiraj 40 Repeatable Weapon Quest (may be bugged)
+	[21232] = { -- weapon
+		Items = {
+			[RAID_NORMAL] = {
+				5662, 5666, 5663, 5665,
+			},
+			[ANY] = {
+				5662, 5666, 5663, 5665,
+			},
+		},
+	},
+	[21237] = { -- weapon
+		Items = {
+			[RAID_NORMAL] = {
+				5648, 5667, 5664,
+			},
+			[ANY] = {
+				5648, 5667, 5664,
+			},
+		},
+	},
+
 
 };
