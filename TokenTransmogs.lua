@@ -58,6 +58,7 @@ local QUESTREWARD =  Enum.ItemCreationContext.QuestReward;
 local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
 local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
 local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
+local RaidBonus_2 = Enum.ItemCreationContext.RaidBonus_2; -- Warbound LFR K'aresh
 local ANY = "ANY"
 
 local itemData = {};
@@ -8010,6 +8011,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				115141, 118395, 118550,
 			},
+			[RaidBonus_2] = {
+				115097, 118459, 118561,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -8032,6 +8036,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				115142, 118396, 118551,
+			},
+			[RaidBonus_2] = {
+				115098, 118460, 118562,
 			},
 		},
 		Classes = CLASS_GROUP_1,
@@ -8056,6 +8063,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				115143, 118397, 118552,
 			},
+			[RaidBonus_2] = {
+				115099, 118461, 118563,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -8079,6 +8089,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				115148, 118402, 118557,
 			},
+			[RaidBonus_2] = {
+				115104, 118466, 118568,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -8101,6 +8114,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				115145, 118399, 118554,
+			},
+			[RaidBonus_2] = {
+				115101, 118463, 118565,
 			},
 		},
 		Classes = CLASS_GROUP_1,
@@ -8127,6 +8143,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				116723, 116944, 118319,
 			},
+			[RaidBonus_2] = {
+				116778, 116918, 118343,
+			},
 		},
 		Classes = CLASS_GROUP_2,
 	},
@@ -8149,6 +8168,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				116724, 116945, 118320,
+			},
+			[RaidBonus_2] = {
+				116779, 116919, 118344,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -8173,6 +8195,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				116725, 116946, 118321,
 			},
+			[RaidBonus_2] = {
+				116780, 116920, 118345,
+			},
 		},
 		Classes = CLASS_GROUP_2,
 	},
@@ -8196,6 +8221,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				116730, 116951, 118326,
 			},
+			[RaidBonus_2] = {
+				116785, 116925, 118350,
+			},
 		},
 		Classes = CLASS_GROUP_2,
 	},
@@ -8218,6 +8246,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				116727, 116948, 118323,
+			},
+			[RaidBonus_2] = {
+				116782, 116922, 118347,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -8244,6 +8275,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				115879, 116338, 118518,
 			},
+			[RaidBonus_2] = {
+				115891, 116350, 118528,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -8266,6 +8300,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				115880, 116339, 118519,
+			},
+			[RaidBonus_2] = {
+				115892, 116351, 118529,
 			},
 		},
 		Classes = CLASS_GROUP_3,
@@ -8290,6 +8327,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				115881, 116340, 118520,
 			},
+			[RaidBonus_2] = {
+				115893, 116352, 118530,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -8313,6 +8353,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				115886, 116345, 118525,
 			},
+			[RaidBonus_2] = {
+				115898, 116357, 118535,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -8335,6 +8378,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				115883, 116342, 118522,
+			},
+			[RaidBonus_2] = {
+				115895, 116354, 118532,
 			},
 		},
 		Classes = CLASS_GROUP_3,
@@ -8361,6 +8407,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				116701, 117773, 117531, 104836,
 			},
+			[RaidBonus_2] = {
+				116679, 117783, 117543, 104847,
+			},
 		},
 		Classes = CLASS_GROUP_4,
 	},
@@ -8383,6 +8432,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				116702, 117774, 117532, 104837,
+			},
+			[RaidBonus_2] = {
+				116680, 117784, 117544, 104848,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -8407,6 +8459,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				116703, 117775, 117533, 104838,
 			},
+			[RaidBonus_2] = {
+				116681, 117785, 117545, 104849,
+			},
 		},
 		Classes = CLASS_GROUP_4,
 	},
@@ -8430,6 +8485,9 @@ itemData = {
 			[LegendaryCrafting_5] = {
 				116708, 117780, 117538, 104843,
 			},
+			[RaidBonus_2] = {
+				116686, 117790, 117550, 104854,
+			},
 		},
 		Classes = CLASS_GROUP_4,
 	},
@@ -8452,6 +8510,9 @@ itemData = {
 			},
 			[LegendaryCrafting_5] = {
 				116705, 117777, 117535, 104840,
+			},
+			[RaidBonus_2] = {
+				116683, 117787, 117547, 104851,
 			},
 		},
 		Classes = CLASS_GROUP_4,
