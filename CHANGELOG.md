@@ -1,3 +1,7 @@
+# 0.1.7
+
+11.2.5 toc update
+
 # 0.1.6
 
 Added warband raid finder manaforge omega tokens
