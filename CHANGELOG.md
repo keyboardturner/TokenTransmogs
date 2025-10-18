@@ -1,3 +1,7 @@
+# 0.1.8
+
+Added warband normal manaforge omega tokens
+
 # 0.1.7
 
 11.2.5 toc update

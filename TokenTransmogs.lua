@@ -59,6 +59,7 @@ local RAID_HEROIC_EXT = Enum.ItemCreationContext.RaidHeroicExtended;
 local LegendaryCrafting_6 = Enum.ItemCreationContext.LegendaryCrafting_6; -- Warbound Normal Nerubar
 local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- Warbound Normal Undermine
 local RaidBonus_2 = Enum.ItemCreationContext.RaidBonus_2; -- Warbound LFR K'aresh
+local RaidBonus_3 = Enum.ItemCreationContext.RaidBonus_3; -- Warbound Normal K'aresh
 local ANY = "ANY"
 
 local itemData = {};
@@ -8014,6 +8015,9 @@ itemData = {
 			[RaidBonus_2] = {
 				115097, 118459, 118561,
 			},
+			[RaidBonus_3] = {
+				115141, 118395, 118550,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -8039,6 +8043,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				115098, 118460, 118562,
+			},
+			[RaidBonus_3] = {
+				115142, 118396, 118551,
 			},
 		},
 		Classes = CLASS_GROUP_1,
@@ -8066,6 +8073,9 @@ itemData = {
 			[RaidBonus_2] = {
 				115099, 118461, 118563,
 			},
+			[RaidBonus_3] = {
+				115143, 118397, 118552,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -8092,6 +8102,9 @@ itemData = {
 			[RaidBonus_2] = {
 				115104, 118466, 118568,
 			},
+			[RaidBonus_3] = {
+				115148, 118402, 118557,
+			},
 		},
 		Classes = CLASS_GROUP_1,
 	},
@@ -8117,6 +8130,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				115101, 118463, 118565,
+			},
+			[RaidBonus_3] = {
+				115145, 118399, 118554,
 			},
 		},
 		Classes = CLASS_GROUP_1,
@@ -8146,6 +8162,9 @@ itemData = {
 			[RaidBonus_2] = {
 				116778, 116918, 118343,
 			},
+			[RaidBonus_3] = {
+				116723, 116944, 118319,
+			},
 		},
 		Classes = CLASS_GROUP_2,
 	},
@@ -8171,6 +8190,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				116779, 116919, 118344,
+			},
+			[RaidBonus_3] = {
+				116724, 116945, 118320,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -8198,6 +8220,9 @@ itemData = {
 			[RaidBonus_2] = {
 				116780, 116920, 118345,
 			},
+			[RaidBonus_3] = {
+				116725, 116946, 118321,
+			},
 		},
 		Classes = CLASS_GROUP_2,
 	},
@@ -8224,6 +8249,9 @@ itemData = {
 			[RaidBonus_2] = {
 				116785, 116925, 118350,
 			},
+			[RaidBonus_3] = {
+				116730, 116951, 118326,
+			},
 		},
 		Classes = CLASS_GROUP_2,
 	},
@@ -8249,6 +8277,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				116782, 116922, 118347,
+			},
+			[RaidBonus_3] = {
+				116727, 116948, 118323,
 			},
 		},
 		Classes = CLASS_GROUP_2,
@@ -8278,6 +8309,9 @@ itemData = {
 			[RaidBonus_2] = {
 				115891, 116350, 118528,
 			},
+			[RaidBonus_3] = {
+				115879, 116338, 118518,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -8303,6 +8337,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				115892, 116351, 118529,
+			},
+			[RaidBonus_3] = {
+				115880, 116339, 118519,
 			},
 		},
 		Classes = CLASS_GROUP_3,
@@ -8330,6 +8367,9 @@ itemData = {
 			[RaidBonus_2] = {
 				115893, 116352, 118530,
 			},
+			[RaidBonus_3] = {
+				115881, 116340, 118520,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -8356,6 +8396,9 @@ itemData = {
 			[RaidBonus_2] = {
 				115898, 116357, 118535,
 			},
+			[RaidBonus_3] = {
+				115886, 116345, 118525,
+			},
 		},
 		Classes = CLASS_GROUP_3,
 	},
@@ -8381,6 +8424,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				115895, 116354, 118532,
+			},
+			[RaidBonus_3] = {
+				115883, 116342, 118522,
 			},
 		},
 		Classes = CLASS_GROUP_3,
@@ -8410,6 +8456,9 @@ itemData = {
 			[RaidBonus_2] = {
 				116679, 117783, 117543, 104847,
 			},
+			[RaidBonus_3] = {
+				116701, 117773, 117531, 104836,
+			},
 		},
 		Classes = CLASS_GROUP_4,
 	},
@@ -8435,6 +8484,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				116680, 117784, 117544, 104848,
+			},
+			[RaidBonus_3] = {
+				116702, 117774, 117532, 104837,
 			},
 		},
 		Classes = CLASS_GROUP_4,
@@ -8462,6 +8514,9 @@ itemData = {
 			[RaidBonus_2] = {
 				116681, 117785, 117545, 104849,
 			},
+			[RaidBonus_3] = {
+				116703, 117775, 117533, 104838,
+			},
 		},
 		Classes = CLASS_GROUP_4,
 	},
@@ -8488,6 +8543,9 @@ itemData = {
 			[RaidBonus_2] = {
 				116686, 117790, 117550, 104854,
 			},
+			[RaidBonus_3] = {
+				116708, 117780, 117538, 104843,
+			},
 		},
 		Classes = CLASS_GROUP_4,
 	},
@@ -8513,6 +8571,9 @@ itemData = {
 			},
 			[RaidBonus_2] = {
 				116683, 117787, 117547, 104851,
+			},
+			[RaidBonus_3] = {
+				116705, 117777, 117535, 104840,
 			},
 		},
 		Classes = CLASS_GROUP_4,
