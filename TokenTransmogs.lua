@@ -360,10 +360,10 @@ local CLASS_GROUP_28 = {1, "1-pvp", 5, "5-pvp", 11, "11-pvp"};		--Warrior, Warri
 local CLASS_GROUP_29 = {3, "3-pvp", 8, "8-pvp", 9, "9-pvp"};		--Hunter, Hunter, Mage, Mage, Warlock, Warlock			(PvE+PvP)
 
 --Midnight
-local CLASS_GROUP_30 = {1, 2, 6}; -- Warrior, Paladin, Death Knight
-local CLASS_GROUP_31 = {3, 7, 13}; -- Hunter, Shaman, Evoker
-local CLASS_GROUP_32 = {4, 10, 11, 12}; -- Rogue, Monk, Druid, Demon Hunter
-local CLASS_GROUP_33 = {5, 8, 9}; -- Priest, Mage, Warlock
+local CLASS_GROUP_31 = {1, 2, 6}; -- Warrior, Paladin, Death Knight
+local CLASS_GROUP_32 = {3, 7, 13}; -- Hunter, Shaman, Evoker
+local CLASS_GROUP_33 = {4, 10, 11, 12}; -- Rogue, Monk, Druid, Demon Hunter
+local CLASS_GROUP_34 = {5, 8, 9}; -- Priest, Mage, Warlock
 
 
 
@@ -8811,7 +8811,370 @@ itemData = {
 
 
 	-- Midnight Season 1
-	--Rogue, Monk, Druid, Demon Hunter
+	-- Warrior, Paladin, Death Knight
+	[249358] = { -- Helm
+		Items = {
+			[RAID_FINDER] = {
+				127337, 127392, 125672,
+			},
+			[RAID_NORMAL] = {
+				127326, 127381, 125620,
+			},
+			[RAID_HEROIC] = {
+				127293, 127348, 125633,
+			},
+			[RAID_MYTHIC] = {
+				127291, 127379, 125669,
+			},
+		},
+		Classes = CLASS_GROUP_31,
+	},
+
+	[249366] = { -- Shoulder
+		Items = {
+			[RAID_FINDER] = {
+				127338, 127393, 125673,
+			},
+			[RAID_NORMAL] = {
+				127327, 127382, 125621,
+			},
+			[RAID_HEROIC] = {
+				127294, 127349, 125634,
+			},
+			[RAID_MYTHIC] = {
+				127292, 127380, 125670,
+			},
+		},
+		Classes = CLASS_GROUP_31,
+	},
+
+	[249350] = { -- Chest
+		Items = {
+			[RAID_FINDER] = {
+				127339, 127394, 125674,
+			},
+			[RAID_NORMAL] = {
+				127328, 127383, 125622,
+			},
+			[RAID_HEROIC] = {
+				127295, 127350, 125635,
+			},
+			[RAID_MYTHIC] = {
+				127284, 127372, 125661,
+			},
+		},
+		Classes = CLASS_GROUP_31,
+	},
+
+	[249354] = { -- Gloves
+		Items = {
+			[RAID_FINDER] = {
+				127344, 127399, 125679,
+			},
+			[RAID_NORMAL] = {
+				127333, 127388, 125627,
+			},
+			[RAID_HEROIC] = {
+				127300, 127355, 125640,
+			},
+			[RAID_MYTHIC] = {
+				127289, 127377, 125666,
+			},
+		},
+		Classes = CLASS_GROUP_31,
+	},
+
+	[249362] = { -- Legs
+		Items = {
+			[RAID_FINDER] = {
+				127341, 127396, 125676,
+			},
+			[RAID_NORMAL] = {
+				127330, 127385, 125624,
+			},
+			[RAID_HEROIC] = {
+				127297, 127352, 125637,
+			},
+			[RAID_MYTHIC] = {
+				127286, 127374, 125663,
+			},
+		},
+		Classes = CLASS_GROUP_31,
+	},
+
+
+	-- Hunter, Shaman, Evoker
+	[249357] = { -- Helm
+		Items = {
+			[RAID_FINDER] = {
+				125960, 127113, 126201,
+			},
+			[RAID_NORMAL] = {
+				125996, 127101, 126228,
+			},
+			[RAID_HEROIC] = {
+				125948, 127077, 126191,
+			},
+			[RAID_MYTHIC] = {
+				125993, 127099, 126218,
+			},
+		},
+		Classes = CLASS_GROUP_32,
+	},
+
+	[249365] = { -- Shoulder
+		Items = {
+			[RAID_FINDER] = {
+				125961, 127114, 126202,
+			},
+			[RAID_NORMAL] = {
+				125997, 127102, 126229,
+			},
+			[RAID_HEROIC] = {
+				125949, 127078, 126192,
+			},
+			[RAID_MYTHIC] = {
+				125994, 127100, 126227,
+			},
+		},
+		Classes = CLASS_GROUP_32,
+	},
+
+	[249349] = { -- Chest
+		Items = {
+			[RAID_FINDER] = {
+				125962, 127115, 126203,
+			},
+			[RAID_NORMAL] = {
+				125998, 127103, 126211,
+			},
+			[RAID_HEROIC] = {
+				125950, 127079, 126193,
+			},
+			[RAID_MYTHIC] = {
+				125986, 127091, 126220,
+			},
+		},
+		Classes = CLASS_GROUP_32,
+	},
+
+	[249353] = { -- Gloves
+		Items = {
+			[RAID_FINDER] = {
+				125967, 127120, 126208,
+			},
+			[RAID_NORMAL] = {
+				126003, 127108, 126216,
+			},
+			[RAID_HEROIC] = {
+				125955, 127084, 126198,
+			},
+			[RAID_MYTHIC] = {
+				126122, 127096, 126225,
+			},
+		},
+		Classes = CLASS_GROUP_32,
+	},
+
+	[249361] = { -- Legs
+		Items = {
+			[RAID_FINDER] = {
+				125964, 127117, 126205,
+			},
+			[RAID_NORMAL] = {
+				126000, 127105, 126213,
+			},
+			[RAID_HEROIC] = {
+				125952, 127081, 126195,
+			},
+			[RAID_MYTHIC] = {
+				125988, 127093, 126222,
+			},
+		},
+		Classes = CLASS_GROUP_32,
+	},
+
+	-- Rogue, Monk, Druid, Demon Hunter
+	[249356] = { -- Helm
+		Items = {
+			[RAID_FINDER] = {
+				123453, 125595, 126723, 124245,
+			},
+			[RAID_NORMAL] = {
+				123475, 125535, 126759, 124185,
+			},
+			[RAID_HEROIC] = {
+				123442, 125559, 126711, 124209,
+			},
+			[RAID_MYTHIC] = {
+				123440, 125580, 126757, 124206,
+			},
+		},
+		Classes = CLASS_GROUP_33,
+	},
+
+	[249364] = { -- Shoulder
+		Items = {
+			[RAID_FINDER] = {
+				123454, 125596, 126724, 124246,
+			},
+			[RAID_NORMAL] = {
+				123476, 125536, 126760, 124186,
+			},
+			[RAID_HEROIC] = {
+				123443, 125560, 126712, 124210,
+			},
+			[RAID_MYTHIC] = {
+				123441, 125581, 126758, 124207,
+			},
+		},
+		Classes = CLASS_GROUP_33,
+	},
+
+	[249348] = { -- Chest
+		Items = {
+			[RAID_FINDER] = {
+				123455, 125597, 126725, 124247,
+			},
+			[RAID_NORMAL] = {
+				123477, 125537, 126761, 124187,
+			},
+			[RAID_HEROIC] = {
+				123444, 125561, 126713, 124211,
+			},
+			[RAID_MYTHIC] = {
+				123433, 125573, 126749, 124199,
+			},
+		},
+		Classes = CLASS_GROUP_33,
+	},
+
+	[249352] = { -- Gloves
+		Items = {
+			[RAID_FINDER] = {
+				123460, 125602, 126730, 124252,
+			},
+			[RAID_NORMAL] = {
+				123482, 125542, 126766, 124192,
+			},
+			[RAID_HEROIC] = {
+				123449, 125566, 126718, 124216,
+			},
+			[RAID_MYTHIC] = {
+				123438, 125578, 126754, 124204,
+			},
+		},
+		Classes = CLASS_GROUP_33,
+	},
+
+	[249360] = { -- Legs
+		Items = {
+			[RAID_FINDER] = {
+				123457, 125599, 126727, 124249,
+			},
+			[RAID_NORMAL] = {
+				123479, 125539, 126763, 124189,
+			},
+			[RAID_HEROIC] = {
+				123446, 125563, 126715, 124213,
+			},
+			[RAID_MYTHIC] = {
+				123435, 125575, 126751, 124201,
+			},
+		},
+		Classes = CLASS_GROUP_33,
+	},
+
+	-- Mage, Priest, Warlock
+	[249355] = { -- Helm
+		Items = {
+			[RAID_FINDER] = {
+				125444, 126918, 126544,
+			},
+			[RAID_NORMAL] = {
+				125408, 126906, 126511,
+			},
+			[RAID_HEROIC] = {
+				125456, 126930, 126500,
+			},
+			[RAID_MYTHIC] = {
+				125442, 126964, 126498,
+			},
+		},
+		Classes = CLASS_GROUP_34,
+	},
+
+	[249363] = { -- Shoulder
+		Items = {
+			[RAID_FINDER] = {
+				125445, 126919, 126545,
+			},
+			[RAID_NORMAL] = {
+				125409, 126907, 126512,
+			},
+			[RAID_HEROIC] = {
+				125457, 126931, 126501,
+			},
+			[RAID_MYTHIC] = {
+				125443, 126965, 126499,
+			},
+		},
+		Classes = CLASS_GROUP_34,
+	},
+
+	[249347] = { -- Chest
+		Items = {
+			[RAID_FINDER] = {
+				125446, 126920, 126546,
+			},
+			[RAID_NORMAL] = {
+				125410, 126908, 126513,
+			},
+			[RAID_HEROIC] = {
+				125458, 126932, 126502,
+			},
+			[RAID_MYTHIC] = {
+				125434, 126956, 126491,
+			},
+		},
+		Classes = CLASS_GROUP_34,
+	},
+
+	[249351] = { -- Gloves
+		Items = {
+			[RAID_FINDER] = {
+				125451, 126925, 126551,
+			},
+			[RAID_NORMAL] = {
+				125415, 126913, 126518,
+			},
+			[RAID_HEROIC] = {
+				125463, 126937, 126507,
+			},
+			[RAID_MYTHIC] = {
+				125439, 126961, 126496,
+			},
+		},
+		Classes = CLASS_GROUP_34,
+	},
+
+	[249359] = { -- Legs
+		Items = {
+			[RAID_FINDER] = {
+				125448, 126922, 126548,
+			},
+			[RAID_NORMAL] = {
+				125412, 126910, 126515,
+			},
+			[RAID_HEROIC] = {
+				125460, 126934, 126504,
+			},
+			[RAID_MYTHIC] = {
+				125436, 126958, 126493,
+			},
+		},
+		Classes = CLASS_GROUP_34,
+	},
 
 
 };
