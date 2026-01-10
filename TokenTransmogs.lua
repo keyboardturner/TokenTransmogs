@@ -161,7 +161,7 @@ local function GetCollectionInfoForToken(itemLink)
 			local sources = GetAllAppearanceSources(appearanceID);
 			if not sources then return end
 
-			local displayLink = select(6, GetAppearanceSourceInfo(sources[1]));
+			local displayLink = GetAppearanceSourceInfo(sources[1]).itemLink;
 			if displayLink then
 				if not strmatch(displayLink, "%[(.+)%]") then
 					linkReceived = false;
