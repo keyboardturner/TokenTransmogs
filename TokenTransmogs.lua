@@ -47,6 +47,73 @@ TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, _OnTooltipSet
 -- end of debug
 --]]
 
+
+--[[
+-- debug, do not add to final version
+
+local inputEditBox = CreateFrame("EditBox", "TransmogSetInputBox", UIParent, "InputBoxTemplate")
+inputEditBox:SetSize(300, 45)
+inputEditBox:SetAutoFocus(false)
+inputEditBox:SetPoint("CENTER", UIParent, "CENTER", 0, 50)
+inputEditBox:SetTextInsets(10, 10, 10, 10)
+inputEditBox:SetFontObject("GameFontHighlight")
+
+local inputLabel = inputEditBox:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+inputLabel:SetPoint("BOTTOM", inputEditBox, "TOP", 0, 5)
+inputLabel:SetText("Enter Transmog Set ID:")
+
+local outputEditBox = CreateFrame("EditBox", "VisualIDOutputBox", UIParent, "InputBoxTemplate")
+outputEditBox:SetSize(500, 45)
+outputEditBox:SetAutoFocus(false)
+outputEditBox:SetPoint("CENTER", UIParent, "CENTER", 0, -50)
+outputEditBox:SetTextInsets(10, 10, 10, 10)
+outputEditBox:SetFontObject("GameFontHighlight")
+outputEditBox:SetScript("OnEscapePressed", function(self) self:Hide() end)
+
+local outputLabel = outputEditBox:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+outputLabel:SetPoint("BOTTOM", outputEditBox, "TOP", 0, 0)
+outputLabel:SetText("Visual IDs:")
+
+local processBtn = CreateFrame("Button", "ProcessTransmogBtn", UIParent, "UIPanelButtonTemplate")
+processBtn:SetSize(100, 30)
+processBtn:SetPoint("TOP", inputEditBox, "BOTTOM", 0, -10)
+processBtn:SetText("Get IDs")
+
+processBtn:SetScript("OnClick", function()
+	outputEditBox:Show()
+	local transmogsetID = tonumber(inputEditBox:GetText())
+	
+	if not transmogsetID then
+		outputEditBox:SetText("Invalid ID")
+		return
+	end
+	
+	local slotIDs = {1, 3, 5, 10, 7}
+	local visualIDs = {}
+	
+	for _, slotID in ipairs(slotIDs) do
+		local sources = C_TransmogSets.GetSourcesForSlot(transmogsetID, slotID)
+		if sources and sources[1] and sources[1].visualID then
+			table.insert(visualIDs, sources[1].visualID)
+		else
+			table.insert(visualIDs, "N/A")
+		end
+	end
+	
+	outputEditBox:SetText(table.concat(visualIDs, ", "))
+	outputEditBox:HighlightText()
+end)
+
+inputEditBox:SetScript("OnEnterPressed", function(self)
+	processBtn:Click()
+end)
+
+inputEditBox:Show()
+outputEditBox:Show()
+processBtn:Show()
+
+--]]
+
 local RAID_FINDER = Enum.ItemCreationContext.RaidFinder;
 local RAID_NORMAL = Enum.ItemCreationContext.RaidNormal;
 local RAID_HEROIC = Enum.ItemCreationContext.RaidHeroic;
@@ -123,10 +190,10 @@ end
 
 local _ItemContextNameTranslator = EnumUtil.GenerateNameTranslation(Enum.ItemCreationContext)
 local ItemContextNameTranslator = function(itemContext)
-    if not itemContext then
-        return ANY
-    end
-    return _ItemContextNameTranslator(itemContext)
+	if not itemContext then
+		return ANY
+	end
+	return _ItemContextNameTranslator(itemContext)
 end
 
 local function GetItemContextFromLink(itemLink)
@@ -248,7 +315,7 @@ TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetI
 
 
 
---SLs/Dragonflight+
+--SLs/Dragonflight/War Within
 local CLASS_GROUP_1 = {6, 9, 12};		--Death Knight, Warlock, Demon Hunter
 local CLASS_GROUP_2 = {3, 8, 11};		--Hunter, Mage, Druid
 local CLASS_GROUP_3 = {2, 5, 7};		--Paladin, Priest, Shaman
@@ -287,11 +354,16 @@ local CLASS_GROUP_25 = {4, "4-pvp", 8, "8-pvp", 11, "11-pvp"};		--Rogue, Rogue, 
 local CLASS_GROUP_26 = {2, "2-pvp", 5, "5-pvp", 9, "9-pvp"};		--Paladin, Paladin, Priest, Priest, Warlock, Warlock	(PvE+PvP)
 local CLASS_GROUP_30 = {1, "1-pvp", 3, "3-pvp", 7, "7-pvp"};		-- Warrior, Warrior, Hunter, Hunter, Shaman, Shaman		(PvE+PvP)
 
--- Karazhan/Gruul/Mag/SSC/Eye + PvP Season 1/2
+--Karazhan/Gruul/Mag/SSC/Eye + PvP Season 1/2
 local CLASS_GROUP_27 = {2, "2-pvp", 4, "4-pvp", 7, "7-pvp"};		--Paladin, Paladin, Rogue, Rogue, Shaman, Shaman		(PvE+PvP)
 local CLASS_GROUP_28 = {1, "1-pvp", 5, "5-pvp", 11, "11-pvp"};		--Warrior, Warrior, Priest, Priest, Druid, Druid		(PvE+PvP)
 local CLASS_GROUP_29 = {3, "3-pvp", 8, "8-pvp", 9, "9-pvp"};		--Hunter, Hunter, Mage, Mage, Warlock, Warlock			(PvE+PvP)
 
+--Midnight
+local CLASS_GROUP_30 = {1, 2, 6}; -- Warrior, Paladin, Death Knight
+local CLASS_GROUP_31 = {3, 7, 13}; -- Hunter, Shaman, Evoker
+local CLASS_GROUP_32 = {4, 10, 11, 12}; -- Rogue, Monk, Druid, Demon Hunter
+local CLASS_GROUP_33 = {5, 8, 9}; -- Priest, Mage, Warlock
 
 
 
@@ -8736,6 +8808,10 @@ itemData = {
 			},
 		},
 	},
+
+
+	-- Midnight Season 1
+	--Rogue, Monk, Druid, Demon Hunter
 
 
 };
