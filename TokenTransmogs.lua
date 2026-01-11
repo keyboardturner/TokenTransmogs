@@ -352,7 +352,7 @@ local CLASS_GROUP_24 = {1, 2, 3, 4, 7};						--Warrior, Paladin, Hunter, Rogue, 
 --Hyjal/Black Temple/Sunwell + PvP Season 3
 local CLASS_GROUP_25 = {4, "4-pvp", 8, "8-pvp", 11, "11-pvp"};		--Rogue, Rogue, Mage, Mage, Druid, Druid				(PvE+PvP)
 local CLASS_GROUP_26 = {2, "2-pvp", 5, "5-pvp", 9, "9-pvp"};		--Paladin, Paladin, Priest, Priest, Warlock, Warlock	(PvE+PvP)
-local CLASS_GROUP_30 = {1, "1-pvp", 3, "3-pvp", 7, "7-pvp"};		-- Warrior, Warrior, Hunter, Hunter, Shaman, Shaman		(PvE+PvP)
+local CLASS_GROUP_30 = {1, "1-pvp", 3, "3-pvp", 7, "7-pvp"};		--Warrior, Warrior, Hunter, Hunter, Shaman, Shaman		(PvE+PvP)
 
 --Karazhan/Gruul/Mag/SSC/Eye + PvP Season 1/2
 local CLASS_GROUP_27 = {2, "2-pvp", 4, "4-pvp", 7, "7-pvp"};		--Paladin, Paladin, Rogue, Rogue, Shaman, Shaman		(PvE+PvP)
@@ -360,10 +360,10 @@ local CLASS_GROUP_28 = {1, "1-pvp", 5, "5-pvp", 11, "11-pvp"};		--Warrior, Warri
 local CLASS_GROUP_29 = {3, "3-pvp", 8, "8-pvp", 9, "9-pvp"};		--Hunter, Hunter, Mage, Mage, Warlock, Warlock			(PvE+PvP)
 
 --Midnight
-local CLASS_GROUP_31 = {1, 2, 6}; -- Warrior, Paladin, Death Knight
-local CLASS_GROUP_32 = {3, 7, 13}; -- Hunter, Shaman, Evoker
-local CLASS_GROUP_33 = {4, 10, 11, 12}; -- Rogue, Monk, Druid, Demon Hunter
-local CLASS_GROUP_34 = {5, 8, 9}; -- Priest, Mage, Warlock
+local CLASS_GROUP_31 = {1, 2, 6};			--Warrior, Paladin, Death Knight
+local CLASS_GROUP_32 = {3, 7, 13};			--Hunter, Shaman, Evoker
+local CLASS_GROUP_33 = {4, 10, 11, 12};		--Rogue, Monk, Druid, Demon Hunter
+local CLASS_GROUP_34 = {5, 8, 9};			--Priest, Mage, Warlock
 
 
 
