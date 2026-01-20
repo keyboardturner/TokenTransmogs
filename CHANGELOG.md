@@ -2,6 +2,8 @@
 
 12.0.0 toc update
 
+Added Midnight tier set data
+
 # 0.1.9
 
 11.2.7 toc update
