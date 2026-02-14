@@ -1252,16 +1252,16 @@ itemData = {
 	[207478] = {
 		Items = {
 			[RAID_FINDER] = {
-				82998, 82668, 81353, 82835, -- Warrior, Rogue, Monk, Evoker Shoulder Slot IDs grouped together
+				82945, 81634, 81140, -- Death Knight, Warlock, Demon Hunter Shoulder Slot IDs grouped together
 			},
 			[RAID_NORMAL] = {
-				83002, 82704, 81393, 82824,
+				82956, 81620, 81149,
 			},
 			[RAID_HEROIC] = {
-				83004, 82680, 81363, 82857,
+				82923, 81584, 81167,
 			},
 			[RAID_MYTHIC] = {
-				83007, 82737, 81391, 82868,
+				82943, 81606, 81183,
 			},
 		},
 		Classes = CLASS_GROUP_1,
