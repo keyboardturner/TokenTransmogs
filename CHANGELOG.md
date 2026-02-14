@@ -1,3 +1,7 @@
+# 0.2.2
+
+Fixed Amirdrassil Shoulder Tier Token data for Death Knight, Warlock, Demon Hunter
+
 # 0.2.1
 
 12.0.1 toc update
