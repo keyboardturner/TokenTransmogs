@@ -1,3 +1,7 @@
+# 0.2.4
+
+12.0.5 toc update
+
 # 0.2.3
 
 Added the Dragonflight Primalist item outfit tokens and their upgraded variants
