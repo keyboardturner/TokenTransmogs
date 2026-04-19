@@ -14,6 +14,7 @@ local LegendaryCrafting_5 = Enum.ItemCreationContext.LegendaryCrafting_5; -- War
 local RaidBonus_2 = Enum.ItemCreationContext.RaidBonus_2; -- Warbound LFR K'aresh
 local RaidBonus_3 = Enum.ItemCreationContext.RaidBonus_3; -- Warbound Normal K'aresh
 local ANY = "ANY"
+local UPGRADED = "UPGRADED"
 
 --SLs/Dragonflight/War Within
 local CLASS_GROUP_1 = {6, 9, 12};		--Death Knight, Warlock, Demon Hunter
@@ -8876,11 +8877,16 @@ local itemData = {
 		Classes = CLASS_GROUP_34,
 	},
 
-	-- primalist sets
+
+
+	-- primalist sets - mail
 	[203620] = { -- Legs
 		Items = {
 			[ANY] = {
-				77350
+				77350,
+			},
+			[UPGRADED] = {
+				77368,
 			},
 		},
 		--Classes = CLASS_GROUP_32,
@@ -8889,11 +8895,866 @@ local itemData = {
 	[263720] = { -- Legs
 		Items = {
 			[ANY] = {
-				77350
+				77350,
+			},
+			[UPGRADED] = {
+				77368,
 			},
 		},
 		--Classes = CLASS_GROUP_32,
 	},
+
+	[203613] = { -- Helm
+		Items = {
+			[ANY] = {
+				77346,
+			},
+			[UPGRADED] = {
+				77364,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263712] = { -- Helm
+		Items = {
+			[ANY] = {
+				77346,
+			},
+			[UPGRADED] = {
+				77364,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[203628] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77347,
+			},
+			[UPGRADED] = {
+				77365,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263726] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77347,
+			},
+			[UPGRADED] = {
+				77365,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[203617] = { -- chest
+		Items = {
+			[ANY] = {
+				77348,
+			},
+			[UPGRADED] = {
+				77366,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263717] = { -- chest
+		Items = {
+			[ANY] = {
+				77348,
+			},
+			[UPGRADED] = {
+				77366,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[203631] = { -- wrist
+		Items = {
+			[ANY] = {
+				77352,
+			},
+			[UPGRADED] = {
+				77370,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263729] = { -- wrist
+		Items = {
+			[ANY] = {
+				77352,
+			},
+			[UPGRADED] = {
+				77370,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[203644] = { -- hands
+		Items = {
+			[ANY] = {
+				77353,
+			},
+			[UPGRADED] = {
+				77371,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263865] = { -- hands
+		Items = {
+			[ANY] = {
+				77353,
+			},
+			[UPGRADED] = {
+				77371,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[203636] = { -- waist
+		Items = {
+			[ANY] = {
+				77349,
+			},
+			[UPGRADED] = {
+				77367,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263740] = { -- waist
+		Items = {
+			[ANY] = {
+				77349,
+			},
+			[UPGRADED] = {
+				77367,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[203639] = { -- feet
+		Items = {
+			[ANY] = {
+				77351,
+			},
+			[UPGRADED] = {
+				77369,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+	[263859] = { -- feet
+		Items = {
+			[ANY] = {
+				77351,
+			},
+			[UPGRADED] = {
+				77369,
+			},
+		},
+		--Classes = CLASS_GROUP_32,
+	},
+
+
+
+	-- primalist sets - plate
+	[203623] = { -- Legs
+		Items = {
+			[ANY] = {
+				77305,
+			},
+			[UPGRADED] = {
+				77323,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263722] = { -- Legs
+		Items = {
+			[ANY] = {
+				77305,
+			},
+			[UPGRADED] = {
+				77323,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203611] = { -- Helm
+		Items = {
+			[ANY] = {
+				77301,
+			},
+			[UPGRADED] = {
+				77319,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263710] = { -- Helm
+		Items = {
+			[ANY] = {
+				77301,
+			},
+			[UPGRADED] = {
+				77319,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203626] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77302,
+			},
+			[UPGRADED] = {
+				77320,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263724] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77302,
+			},
+			[UPGRADED] = {
+				77320,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203615] = { -- chest
+		Items = {
+			[ANY] = {
+				77303,
+			},
+			[UPGRADED] = {
+				77321,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263715] = { -- chest
+		Items = {
+			[ANY] = {
+				77303,
+			},
+			[UPGRADED] = {
+				77321,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203633] = { -- wrist
+		Items = {
+			[ANY] = {
+				77307,
+			},
+			[UPGRADED] = {
+				77325,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263731] = { -- wrist
+		Items = {
+			[ANY] = {
+				77307,
+			},
+			[UPGRADED] = {
+				77325,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203643] = { -- hands
+		Items = {
+			[ANY] = {
+				77308,
+			},
+			[UPGRADED] = {
+				77326,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263864] = { -- hands
+		Items = {
+			[ANY] = {
+				77308,
+			},
+			[UPGRADED] = {
+				77326,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203634] = { -- waist
+		Items = {
+			[ANY] = {
+				77304,
+			},
+			[UPGRADED] = {
+				77322,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263732] = { -- waist
+		Items = {
+			[ANY] = {
+				77304,
+			},
+			[UPGRADED] = {
+				77322,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[203640] = { -- feet
+		Items = {
+			[ANY] = {
+				77306,
+			},
+			[UPGRADED] = {
+				77324,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+	[263861] = { -- feet
+		Items = {
+			[ANY] = {
+				77306,
+			},
+			[UPGRADED] = {
+				77324,
+			},
+		},
+		--Classes = CLASS_GROUP_31,
+	},
+
+
+
+	-- primalist sets - leather
+	[203619] = { -- Legs
+		Items = {
+			[ANY] = {
+				77632,
+			},
+			[UPGRADED] = {
+				77650,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263719] = { -- Legs
+		Items = {
+			[ANY] = {
+				77632,
+			},
+			[UPGRADED] = {
+				77650,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203614] = { -- Helm
+		Items = {
+			[ANY] = {
+				77628,
+			},
+			[UPGRADED] = {
+				77646,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263713] = { -- Helm
+		Items = {
+			[ANY] = {
+				77628,
+			},
+			[UPGRADED] = {
+				77646,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203629] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77629,
+			},
+			[UPGRADED] = {
+				77647,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263727] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77629,
+			},
+			[UPGRADED] = {
+				77647,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203618] = { -- chest
+		Items = {
+			[ANY] = {
+				77630,
+			},
+			[UPGRADED] = {
+				77648,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263718] = { -- chest
+		Items = {
+			[ANY] = {
+				77630,
+			},
+			[UPGRADED] = {
+				77648,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203630] = { -- wrist
+		Items = {
+			[ANY] = {
+				77634,
+			},
+			[UPGRADED] = {
+				77652,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263728] = { -- wrist
+		Items = {
+			[ANY] = {
+				77634,
+			},
+			[UPGRADED] = {
+				77652,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203645] = { -- hands
+		Items = {
+			[ANY] = {
+				77635,
+			},
+			[UPGRADED] = {
+				77653,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263866] = { -- hands
+		Items = {
+			[ANY] = {
+				77635,
+			},
+			[UPGRADED] = {
+				77653,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203637] = { -- waist
+		Items = {
+			[ANY] = {
+				77631,
+			},
+			[UPGRADED] = {
+				77649,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263776] = { -- waist
+		Items = {
+			[ANY] = {
+				77631,
+			},
+			[UPGRADED] = {
+				77649,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203638] = { -- feet
+		Items = {
+			[ANY] = {
+				77633,
+			},
+			[UPGRADED] = {
+				77651,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263822] = { -- feet
+		Items = {
+			[ANY] = {
+				77633,
+			},
+			[UPGRADED] = {
+				77651,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+
+
+	-- primalist sets - cloth
+	[203622] = { -- Legs
+		Items = {
+			[ANY] = {
+				77256,
+			},
+			[UPGRADED] = {
+				77276,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263721] = { -- Legs
+		Items = {
+			[ANY] = {
+				77256,
+			},
+			[UPGRADED] = {
+				77276,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203612] = { -- Helm
+		Items = {
+			[ANY] = {
+				77252,
+			},
+			[UPGRADED] = {
+				77272,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263711] = { -- Helm
+		Items = {
+			[ANY] = {
+				77252,
+			},
+			[UPGRADED] = {
+				77272,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203627] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77253,
+			},
+			[UPGRADED] = {
+				77273,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263725] = { -- shoulders
+		Items = {
+			[ANY] = {
+				77253,
+			},
+			[UPGRADED] = {
+				77273,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203616] = { -- chest
+		Items = {
+			[ANY] = {
+				77254,
+			},
+			[UPGRADED] = {
+				77274,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263716] = { -- chest
+		Items = {
+			[ANY] = {
+				77254,
+			},
+			[UPGRADED] = {
+				77274,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203632] = { -- wrist
+		Items = {
+			[ANY] = {
+				77258,
+			},
+			[UPGRADED] = {
+				77278,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263730] = { -- wrist
+		Items = {
+			[ANY] = {
+				77258,
+			},
+			[UPGRADED] = {
+				77278,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203642] = { -- hands
+		Items = {
+			[ANY] = {
+				77259,
+			},
+			[UPGRADED] = {
+				77279,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263863] = { -- hands
+		Items = {
+			[ANY] = {
+				77259,
+			},
+			[UPGRADED] = {
+				77279,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203635] = { -- waist
+		Items = {
+			[ANY] = {
+				77255,
+			},
+			[UPGRADED] = {
+				77275,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263733] = { -- waist
+		Items = {
+			[ANY] = {
+				77255,
+			},
+			[UPGRADED] = {
+				77275,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[203641] = { -- feet
+		Items = {
+			[ANY] = {
+				77257,
+			},
+			[UPGRADED] = {
+				77277,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+	[263862] = { -- feet
+		Items = {
+			[ANY] = {
+				77257,
+			},
+			[UPGRADED] = {
+				77277,
+			},
+		},
+		--Classes = CLASS_GROUP_33,
+	},
+
+
+
+	[203646] = { -- back
+		Items = {
+			[ANY] = {
+				77260, 77354, 77636, 77309,
+			},
+			[UPGRADED] = {
+				77280, 77372, 77654, 77327,
+			},
+		},
+	},
+
+	[263867] = { -- back
+		Items = {
+			[ANY] = {
+				77260, 77354, 77636, 77309,
+			},
+			[UPGRADED] = {
+				77280, 77372, 77654, 77327,
+			},
+		},
+	},
+
 };
 
 TokenTransmogs.itemData = itemData;
+
+
+
+--[[ -- WIP
+
+	[203650] = { -- weapon
+		ItemIDs = {
+			[1] = {		 -- Warrior
+				
+			},
+			[2] = {		 -- Paladin
+				
+			},
+			[3] = {		 -- Hunter
+				
+			},
+			[4] = {		 -- Rogue
+				
+			},
+			[5] = {		 -- Priest
+				
+			},
+			[6] = {		 -- Death Knight
+				[250] = { -- blood
+					199315,
+				},
+				[251] = { -- frost
+					199304, 199324, 199317, 199315, 199320,
+				},
+				[252] = { -- unholy
+					199315,
+				},
+			},
+			[7] = {		 -- Shaman
+				
+			},
+			[8] = {		 -- Mage
+				
+			},
+			[9] = {		 -- Warlock
+				
+			},
+			[10] = {	 -- Monk
+				
+			},
+			[11] = {	 -- Druid
+				
+			},
+			[12] = {	 -- Demon Hunter
+				[577] = { -- havoc
+					199306, 199308,
+				},
+				[581] = { -- vengeance
+					199306, 199308,
+				},
+				[1480] = { -- devourer
+					199308,
+				},
+				
+			},
+			[13] = {	 -- Evoker
+				
+			},
+		},
+	},
+
+	[257603] = { -- weapon
+		Items = {
+			[ANY] = {
+				00000000
+			},
+		},
+	},
+--]]

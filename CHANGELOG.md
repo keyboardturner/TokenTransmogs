@@ -1,3 +1,9 @@
+# 0.2.3
+
+Added the Dragonflight Primalist item outfit tokens and their upgraded variants
+
+Separated the internal data into its own file
+
 # 0.2.2
 
 Fixed Amirdrassil Shoulder Tier Token data for Death Knight, Warlock, Demon Hunter

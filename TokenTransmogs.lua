@@ -92,7 +92,8 @@ processBtn:SetScript("OnClick", function()
 		return
 	end
 	
-	local slotIDs = {1, 3, 5, 10, 7}
+	--local slotIDs = {1, 3, 5, 10, 7} -- tier set
+	local slotIDs = {1, 3, 5, 6, 7, 8, 9, 10, 15,} -- full set
 	local visualIDs = {}
 	
 	for _, slotID in ipairs(slotIDs) do
@@ -119,6 +120,7 @@ processBtn:Show()
 --]]
 
 local ANY = "ANY"
+local UPGRADED = "UPGRADED"
 
 local ClassListTbl = LocalizedClassList();
 
@@ -204,73 +206,90 @@ local function GetCollectionInfoForToken(itemLink)
 		if not itemContext then 
 			itemContext = ANY;
 		end
-		local difficultyName = ItemContextNameTranslator(itemContext);
-		local appearances = itemInfo.Items[itemContext];
-		if not appearances then return end;
+		
+		local listsToProcess = {}
+		if itemInfo.Items[itemContext] then
+			table.insert(listsToProcess, { list = itemInfo.Items[itemContext], isUpgraded = false })
+		end
+		if itemInfo.Items[UPGRADED] and itemContext ~= UPGRADED then
+			table.insert(listsToProcess, { list = itemInfo.Items[UPGRADED], isUpgraded = true })
+		end
+
+		if #listsToProcess == 0 then return end;
 
 		local classGroup = itemInfo.Classes;
 		local linkReceived = true;
-
+		
 		local collectionInfo = {};
 
-		for i, appearanceID in ipairs(appearances) do
-			local sources = GetAllAppearanceSources(appearanceID);
-			if not sources then return end
+		for _, data in ipairs(listsToProcess) do
+			local appearances = data.list;
+			local isUpgraded = data.isUpgraded;
 
-			local displayLink = GetAppearanceSourceInfo(sources[1]).itemLink;
-			if displayLink then
-				if not strmatch(displayLink, "%[(.+)%]") then
-					linkReceived = false;
+			for i, appearanceID in ipairs(appearances) do
+				local sources = GetAllAppearanceSources(appearanceID);
+				if not sources then return end
+
+				local displayLink = GetAppearanceSourceInfo(sources[1]).itemLink;
+				if displayLink then
+					if not strmatch(displayLink, "%[(.+)%]") then
+						linkReceived = false;
+					end
 				end
+
+				local classID = classGroup and classGroup[i] or nil;
+				local iconMarkup = ""
+				if classID then
+					local baseClassID, tag = classID, nil
+					if type(classID) == "string" then
+						baseClassID, tag = string.match(classID, "^(%d+)%-(%w+)")
+						baseClassID = tonumber(baseClassID)
+					else
+						baseClassID = classID
+					end
+
+					if baseClassID then
+						iconMarkup = ClassVisual:GetClassIconMarkup(baseClassID) or ""
+					end
+
+					if tag == "pvp" then
+						iconMarkup = iconMarkup .. " |A:questlog-questtypeicon-pvp:15:15|a"
+					end
+				end
+				
+				if iconMarkup == "" then
+					local requiredClass = GetItemClassRequirement(displayLink);
+					if not requiredClass then
+						iconMarkup = "";
+					else
+						iconMarkup = "|TInterface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES:15:15:0:0:512:512:".. requiredClass[1]*512 ..":".. requiredClass[2]*512 ..":".. requiredClass[3]*512 ..":".. requiredClass[4]*512 .."|t"
+					end
+				end
+
+				if isUpgraded then
+					iconMarkup = "|A:CovenantSanctum-Upgrade-Icon-Available:15:15|a " .. iconMarkup
+				end
+
+				local collected = false;
+				for _, sourceID in ipairs(sources) do
+					if PlayerHasTransmogItemModifiedAppearance(sourceID) then
+						collected = true;
+						break
+					end
+				end
+
+				local collectedColor = collected and GREEN_FONT_COLOR or RED_FONT_COLOR;
+				local collectedText = collected and COLLECTED or FOLLOWERLIST_LABEL_UNCOLLECTED;
+				collectedText = collectedColor:WrapTextInColorCode(collectedText);
+
+				table.insert(collectionInfo, {
+					classID = classID,
+					link = displayLink,
+					collected = collected,
+					leftText = iconMarkup .. " " .. (displayLink or ""),
+					rightText = collectedText
+				});
 			end
-
-			local classID = classGroup and classGroup[i] or nil;
-			local iconMarkup = ""
-			if classID then
-				local baseClassID, tag = classID, nil
-				if type(classID) == "string" then
-					baseClassID, tag = string.match(classID, "^(%d+)%-(%w+)")
-					baseClassID = tonumber(baseClassID)
-				else
-					baseClassID = classID
-				end
-
-				if baseClassID then
-					iconMarkup = ClassVisual:GetClassIconMarkup(baseClassID) or ""
-				end
-
-				if tag == "pvp" then
-					iconMarkup = iconMarkup .. " |A:questlog-questtypeicon-pvp:15:15|a"
-				end
-			end
-			if not iconMarkup then
-				local requiredClass = GetItemClassRequirement(displayLink);
-				if not requiredClass then
-					iconMarkup = "";
-				else
-					iconMarkup = "|TInterface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES:15:15:0:0:512:512:".. requiredClass[1]*512 ..":".. requiredClass[2]*512 ..":".. requiredClass[3]*512 ..":".. requiredClass[4]*512 .."|t"
-				end
-			end
-
-			local collected = false;
-			for _, sourceID in ipairs(sources) do
-				if PlayerHasTransmogItemModifiedAppearance(sourceID) then
-					collected = true;
-					break
-				end
-			end
-
-			local collectedColor = collected and GREEN_FONT_COLOR or RED_FONT_COLOR;
-			local collectedText = collected and COLLECTED or FOLLOWERLIST_LABEL_UNCOLLECTED;
-			collectedText = collectedColor:WrapTextInColorCode(collectedText);
-
-			collectionInfo[i] = {
-				classID = classID,
-				link = displayLink,
-				collected = collected,
-				leftText = iconMarkup .. " " .. displayLink,
-				rightText = collectedText
-			};
 		end
 
 		return collectionInfo, linkReceived
