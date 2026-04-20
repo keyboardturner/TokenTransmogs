@@ -8,6 +8,8 @@ Added 12.0.5 Ritual Sites Cache of Void-touched armor boxes
 
 Fixed up some logic when displaying some appearances that should appear on all difficulty variants
 
+Fixed a rare issue in which some items could reference "ghost" transmoglink tooltip data from deleted items, resulting in blank item links such as `[]`
+
 # 0.2.3
 
 Added the Dragonflight Primalist item outfit tokens and their upgraded variants
