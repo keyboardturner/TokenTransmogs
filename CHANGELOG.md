@@ -2,6 +2,10 @@
 
 12.0.5 toc update
 
+Added Dragonflight Dreambound item outfit tokens
+
+Fixed up some logic when displaying some appearances that should appear on all difficulty variants
+
 # 0.2.3
 
 Added the Dragonflight Primalist item outfit tokens and their upgraded variants

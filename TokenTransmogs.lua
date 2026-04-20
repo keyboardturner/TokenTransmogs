@@ -210,6 +210,8 @@ local function GetCollectionInfoForToken(itemLink)
 		local listsToProcess = {}
 		if itemInfo.Items[itemContext] then
 			table.insert(listsToProcess, { list = itemInfo.Items[itemContext], isUpgraded = false })
+		elseif itemInfo.Items[ANY] then
+			table.insert(listsToProcess, { list = itemInfo.Items[ANY], isUpgraded = false })
 		end
 		if itemInfo.Items[UPGRADED] and itemContext ~= UPGRADED then
 			table.insert(listsToProcess, { list = itemInfo.Items[UPGRADED], isUpgraded = true })
