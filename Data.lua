@@ -15,6 +15,9 @@ local RaidBonus_2 = Enum.ItemCreationContext.RaidBonus_2; -- Warbound LFR K'ares
 local RaidBonus_3 = Enum.ItemCreationContext.RaidBonus_3; -- Warbound Normal K'aresh
 local ANY = "ANY"
 local UPGRADED = "UPGRADED"
+local CLASS_GROUP_ALL = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 }; -- Warrior1, Paladin2, Hunter3, Rogue4, Priest5, Death Knight6, Shaman7, Mage8, Warlock9, Monk10, Druid11, Demon Hunter12, Evoker13
+local CLASS_GROUP_ALL_EXTRAPANTS = {1, 2, 2, 3, 4, 5, 6, 7, 7, 8, 9, 10, 11, 12, 13 }; -- extra paladin2, shaman7 pants
+local CLASS_GROUP_ALL_EXTRACHEST = {1, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 13 }; -- extra priest5, mage8, warlock9, druid11 chest
 
 --SLs/Dragonflight/War Within
 local CLASS_GROUP_1 = {6, 9, 12};		--Death Knight, Warlock, Demon Hunter
@@ -9951,6 +9954,100 @@ local itemData = {
 				80087, 80219, 80283, 79448,
 			},
 		},
+	},
+
+
+
+	-- Ritual Sites Void-Touched Tier 2 Uprez Recolor
+	[264314] = { -- Head
+		Items = {
+			[ANY] = {
+				126152, 94655, 126134, 94555, 95389,
+				126143, 95339, 94796, 94602, 126161,
+				126124, 94823, 94894,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
+	},
+	[264315] = { -- Shoulder
+		Items = {
+			[ANY] = {
+				126153, 94656, 126135, 94538, 95390,
+				126144, 95340, 94797, 94603, 126162,
+				126125, 94824, 94895,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
+	},
+	[264316] = { -- Cloak
+		Items = {
+			[ANY] = {
+				126160, 94663, 126142, 94545, 95397,
+				126151, 95356, 94804, 94610, 126169,
+				126132, 94831, 94902,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
+	},
+	[264317] = { -- Chest
+		Items = {
+			[ANY] = {
+				126154, 94657, 126136, 94539, 95391, 95398, -- 95398 extra chest (priest)
+				126145, 95341, 94798, 94805, 94604, 94611, 126163, -- 94805, 94611 extra chest (mage, warlock)
+				126126, 126133, 94825, 94896, -- 126133 extra chest (druid)
+			},
+		},
+		Classes = CLASS_GROUP_ALL_EXTRACHEST,
+	},
+	[264318] = { -- Wrist
+		Items = {
+			[ANY] = {
+				126158, 94661, 126140, 94543, 95395,
+				126149, 95345, 94802, 94608, 126167,
+				126130, 94829, 94900,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
+	},
+	[264319] = { -- Gloves
+		Items = {
+			[ANY] = {
+				126159, 94662, 126141, 94544, 95396,
+				126150, 95346, 94803, 94609, 126168,
+				126131, 94830, 94901,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
+	},
+	[264320] = { -- Belt
+		Items = {
+			[ANY] = {
+				126155, 94658, 126137, 94540, 95392,
+				126146, 95342, 94799, 94605, 126164,
+				126127, 94826, 94897,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
+	},
+	[264321] = { -- Legs
+		Items = {
+			[ANY] = {
+				126156, 94659, 97733, 126138, 94541, 95393, -- 97733 extra pants (paladin)
+				126147, 95343, 97059, 94800, 94606, 126165, -- 97059 extra pants (shaman)
+				126128, 94827, 94898,
+			},
+		},
+		Classes = CLASS_GROUP_ALL_EXTRAPANTS,
+	},
+	[264322] = { -- Boots
+		Items = {
+			[ANY] = {
+				126157, 94660, 126139, 94542, 95394,
+				126148, 95344, 94801, 94607, 126166,
+				126129, 94828, 94899,
+			},
+		},
+		Classes = CLASS_GROUP_ALL,
 	},
 
 };

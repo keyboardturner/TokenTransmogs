@@ -4,6 +4,8 @@
 
 Added Dragonflight Dreambound item outfit tokens
 
+Added 12.0.5 Ritual Sites Cache of Void-touched armor boxes
+
 Fixed up some logic when displaying some appearances that should appear on all difficulty variants
 
 # 0.2.3
