@@ -245,6 +245,10 @@ local function GetCollectionInfoForToken(itemLink)
 					end
 				end
 
+				if not validSourceInfo then -- make sure that linkreceived is not true until *all* data has been dealt with
+					linkReceived = false;
+				end
+
 				if validSourceInfo then
 					
 					if not strmatch(displayLink, "%[(.+)%]") then
