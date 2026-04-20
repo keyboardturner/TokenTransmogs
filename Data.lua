@@ -2987,7 +2987,7 @@ local itemData = {
 	-- Throne of Thunder (LFR 25)
 	[95880] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				19952, 20049, 19964, -- Paladin, Priest, Warlock Head Slot IDs
 			},
 		},
@@ -2995,7 +2995,7 @@ local itemData = {
 	},
 	[95956] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				19954, 20045, 19960, -- Paladin, Priest, Warlock Shoulder Slot IDs
 			},
 		},
@@ -3003,7 +3003,7 @@ local itemData = {
 	},
 	[95823] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				19950, 20047, 19962, -- Paladin, Priest, Warlock Chest Slot IDs
 			},
 		},
@@ -3011,7 +3011,7 @@ local itemData = {
 	},
 	[95856] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				19951, 20048, 19963, -- Paladin, Priest, Warlock Hand Slot IDs
 			},
 		},
@@ -3019,7 +3019,7 @@ local itemData = {
 	},
 	[95888] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				19953, 20050, 19965, -- Paladin, Priest, Warlock Leg Slot IDs
 			},
 		},
@@ -3028,7 +3028,7 @@ local itemData = {
 
 	[95881] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20077, 19912, 20359, 20257, -- Warrior, Hunter, Shaman, Monk Head Slot IDs
 			},
 		},
@@ -3036,7 +3036,7 @@ local itemData = {
 	},
 	[95957] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20079, 19914, 20361, 20262, -- Warrior, Hunter, Shaman, Monk Shoulder Slot IDs
 			},
 		},
@@ -3044,7 +3044,7 @@ local itemData = {
 	},
 	[95824] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20075, 19910, 20362, 20259, -- Warrior, Hunter, Shaman, Monk Chest Slot IDs
 			},
 		},
@@ -3052,7 +3052,7 @@ local itemData = {
 	},
 	[95857] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20076, 19911, 20358, 20260, -- Warrior, Hunter, Shaman, Monk Hand Slot IDs
 			},
 		},
@@ -3060,7 +3060,7 @@ local itemData = {
 	},
 	[95889] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20078, 19913, 20360, 20261, -- Warrior, Hunter, Shaman, Monk Leg Slot IDs
 			},
 		},
@@ -3069,7 +3069,7 @@ local itemData = {
 
 	[95879] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20098, 20476, 20203, 19849, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
 			},
 		},
@@ -3077,7 +3077,7 @@ local itemData = {
 	},
 	[95955] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20103, 20478, 20199, 19852, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
 			},
 		},
@@ -3085,7 +3085,7 @@ local itemData = {
 	},
 	[95822] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20100, 20474, 20201, 19851, -- Rogue, Death Knight, Mage, Druid Chest Slot IDs
 			},
 		},
@@ -3093,7 +3093,7 @@ local itemData = {
 	},
 	[95855] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20101, 20475, 20202, 19848, -- Rogue, Death Knight, Mage, Druid Hand Slot IDs
 			},
 		},
@@ -3101,7 +3101,7 @@ local itemData = {
 	},
 	[95887] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				20102, 20477, 20204, 19850, -- Rogue, Death Knight, Mage, Druid Leg Slot IDs
 			},
 		},
@@ -3112,10 +3112,7 @@ local itemData = {
 	-- Throne of Thunder (Normal)
 	[95577] = {
 		Items = {
-			[RAID_FINDER] = {
-				19935, 20058, 20156,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				19935, 20058, 20156,
 			},
 		},
@@ -3123,10 +3120,7 @@ local itemData = {
 	},
 	[95578] = {
 		Items = {
-			[RAID_FINDER] = {
-				19937, 20054, 20159,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				19937, 20054, 20159,
 			},
 		},
@@ -3134,10 +3128,7 @@ local itemData = {
 	},
 	[95574] = {
 		Items = {
-			[RAID_FINDER] = {
-				19933, 20056, 20158,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				19933, 20056, 20158,
 			},
 		},
@@ -3145,10 +3136,7 @@ local itemData = {
 	},
 	[95575] = {
 		Items = {
-			[RAID_FINDER] = {
-				19934, 20057, 20155,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				19934, 20057, 20155,
 			},
 		},
@@ -3156,10 +3144,7 @@ local itemData = {
 	},
 	[95576] = {
 		Items = {
-			[RAID_FINDER] = {
-				19936, 20059, 20157,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				19936, 20059, 20157,
 			},
 		},
@@ -3168,10 +3153,7 @@ local itemData = {
 
 	[95582] = {
 		Items = {
-			[RAID_FINDER] = {
-				20168, 19920, 20313, 20241,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20168, 19920, 20313, 20241,
 			},
 		},
@@ -3179,10 +3161,7 @@ local itemData = {
 	},
 	[95583] = {
 		Items = {
-			[RAID_FINDER] = {
-				20170, 19922, 20343, 20246,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20170, 19922, 20343, 20246,
 			},
 		},
@@ -3190,10 +3169,7 @@ local itemData = {
 	},
 	[95579] = {
 		Items = {
-			[RAID_FINDER] = {
-				20166, 19918, 20344, 20243,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20166, 19918, 20344, 20243,
 			},
 		},
@@ -3201,10 +3177,7 @@ local itemData = {
 	},
 	[95580] = {
 		Items = {
-			[RAID_FINDER] = {
-				20167, 19919, 20341, 20244,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20167, 19919, 20341, 20244,
 			},
 		},
@@ -3212,10 +3185,7 @@ local itemData = {
 	},
 	[95581] = {
 		Items = {
-			[RAID_FINDER] = {
-				20169, 19921, 20342, 20245,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20169, 19921, 20342, 20245,
 			},
 		},
@@ -3224,10 +3194,7 @@ local itemData = {
 
 	[95571] = {
 		Items = {
-			[RAID_FINDER] = {
-				20082, 20311, 20212, 19858,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20082, 20311, 20212, 19858,
 			},
 		},
@@ -3235,10 +3202,7 @@ local itemData = {
 	},
 	[95573] = {
 		Items = {
-			[RAID_FINDER] = {
-				20087, 20431, 20208, 19861,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20087, 20431, 20208, 19861,
 			},
 		},
@@ -3246,10 +3210,7 @@ local itemData = {
 	},
 	[95569] = {
 		Items = {
-			[RAID_FINDER] = {
-				20084, 20424, 20210, 19860,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20084, 20424, 20210, 19860,
 			},
 		},
@@ -3257,10 +3218,7 @@ local itemData = {
 	},
 	[95570] = {
 		Items = {
-			[RAID_FINDER] = {
-				20085, 20480, 20211, 19857,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20085, 20480, 20211, 19857,
 			},
 		},
@@ -3268,10 +3226,7 @@ local itemData = {
 	},
 	[95572] = {
 		Items = {
-			[RAID_FINDER] = {
-				20086, 20427, 20213, 19859,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				20086, 20427, 20213, 19859,
 			},
 		},
@@ -3282,13 +3237,7 @@ local itemData = {
 	-- Throne of Thunder (Heroic)
 	[96624] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19943, 20040, 19972,
-			},
-			[RAID_MYTHIC] = {
-				19943, 20040, 19972,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				19943, 20040, 19972,
 			},
 		},
@@ -3299,24 +3248,12 @@ local itemData = {
 			[RAID_NORMAL] = {
 				19945, 20036, 19975,
 			},
-			[RAID_MYTHIC] = {
-				19945, 20036, 19975,
-			},
-			[RAID_HEROIC_EXT] = {
-				19945, 20036, 19975,
-			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[96567] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19941, 20038, 19974,
-			},
-			[RAID_MYTHIC] = {
-				19941, 20038, 19974,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				19941, 20038, 19974,
 			},
 		},
@@ -3324,13 +3261,7 @@ local itemData = {
 	},
 	[96600] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19942, 20039, 19971,
-			},
-			[RAID_MYTHIC] = {
-				19942, 20039, 19971,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				19942, 20039, 19971,
 			},
 		},
@@ -3338,13 +3269,7 @@ local itemData = {
 	},
 	[96632] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19944, 20041, 19973,
-			},
-			[RAID_MYTHIC] = {
-				19944, 20041, 19973,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				19944, 20041, 19973,
 			},
 		},
@@ -3353,13 +3278,7 @@ local itemData = {
 
 	[96625] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20176, 19928, 20350, 20249,
-			},
-			[RAID_MYTHIC] = {
-				20176, 19928, 20350, 20249,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20176, 19928, 20350, 20249,
 			},
 		},
@@ -3367,13 +3286,7 @@ local itemData = {
 	},
 	[96701] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20178, 19930, 20352, 20254,
-			},
-			[RAID_MYTHIC] = {
-				20178, 19930, 20352, 20254,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20178, 19930, 20352, 20254,
 			},
 		},
@@ -3381,13 +3294,7 @@ local itemData = {
 	},
 	[96568] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20174, 19926, 20353, 20251,
-			},
-			[RAID_MYTHIC] = {
-				20174, 19926, 20353, 20251,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20174, 19926, 20353, 20251,
 			},
 		},
@@ -3395,13 +3302,7 @@ local itemData = {
 	},
 	[96601] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20175, 19927, 20349, 20252,
-			},
-			[RAID_MYTHIC] = {
-				20175, 19927, 20349, 20252,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20175, 19927, 20349, 20252,
 			},
 		},
@@ -3409,13 +3310,7 @@ local itemData = {
 	},
 	[96633] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20177, 19929, 20351, 20253,
-			},
-			[RAID_MYTHIC] = {
-				20177, 19929, 20351, 20253,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20177, 19929, 20351, 20253,
 			},
 		},
@@ -3424,13 +3319,7 @@ local itemData = {
 
 	[96623] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20090, 20126, 20221, 19840,
-			},
-			[RAID_MYTHIC] = {
-				20090, 20126, 20221, 19840,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20090, 20126, 20221, 19840,
 			},
 		},
@@ -3438,13 +3327,7 @@ local itemData = {
 	},
 	[96699] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20095, 20128, 20217, 19842,
-			},
-			[RAID_MYTHIC] = {
-				20095, 20128, 20217, 19842,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20095, 20128, 20217, 19842,
 			},
 		},
@@ -3452,13 +3335,7 @@ local itemData = {
 	},
 	[96566] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20092, 20124, 20219, 19844,
-			},
-			[RAID_MYTHIC] = {
-				20092, 20124, 20219, 19844,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20092, 20124, 20219, 19844,
 			},
 		},
@@ -3466,13 +3343,7 @@ local itemData = {
 	},
 	[96599] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20093, 20125, 20220, 19839,
-			},
-			[RAID_MYTHIC] = {
-				20093, 20125, 20220, 19839,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20093, 20125, 20220, 19839,
 			},
 		},
@@ -3480,13 +3351,7 @@ local itemData = {
 	},
 	[96631] = {
 		Items = {
-			[RAID_NORMAL] = {
-				20094, 20127, 20222, 19841,
-			},
-			[RAID_MYTHIC] = {
-				20094, 20127, 20222, 19841,
-			},
-			[RAID_HEROIC_EXT] = {
+			[ANY] = {
 				20094, 20127, 20222, 19841,
 			},
 		},
@@ -3498,7 +3363,7 @@ local itemData = {
 	-- Heart of Fear (LFR)
 	[89274] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18036, 18981, 18084, -- Paladin, Priest, Warlock Head Slot IDs
 			},
 		},
@@ -3506,7 +3371,7 @@ local itemData = {
 	},
 	[89277] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18038, 18980, 18080, -- Paladin, Priest, Warlock Shoulder Slot IDs
 			},
 		},
@@ -3514,7 +3379,7 @@ local itemData = {
 	},
 	[89265] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18034, 17712, 18082, -- Paladin, Priest, Warlock Chest Slot IDs
 			},
 		},
@@ -3522,7 +3387,7 @@ local itemData = {
 	},
 	[89271] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18035, 17713, 18083, -- Paladin, Priest, Warlock Hand Slot IDs
 			},
 		},
@@ -3530,7 +3395,7 @@ local itemData = {
 	},
 	[89268] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18037, 17715, 18982, -- Paladin, Priest, Warlock Leg Slot IDs
 			},
 		},
@@ -3539,7 +3404,7 @@ local itemData = {
 
 	[89275] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18164, 18964, 18960, 18799, -- Warrior, Hunter, Shaman, Monk Head Slot IDs
 			},
 		},
@@ -3547,7 +3412,7 @@ local itemData = {
 	},
 	[89278] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18166, 18962, 18958, 18803, -- Warrior, Hunter, Shaman, Monk Shoulder Slot IDs
 			},
 		},
@@ -3555,7 +3420,7 @@ local itemData = {
 	},
 	[89266] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18067, 18965, 18717, 18801, -- Warrior, Hunter, Shaman, Monk Chest Slot IDs
 			},
 		},
@@ -3563,7 +3428,7 @@ local itemData = {
 	},
 	[89272] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18068, 18714, 18716, 18718, -- Warrior, Hunter, Shaman, Monk Hand Slot IDs
 			},
 		},
@@ -3571,7 +3436,7 @@ local itemData = {
 	},
 	[89269] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18165, 18963, 18959, 18802, -- Warrior, Hunter, Shaman, Monk Leg Slot IDs
 			},
 		},
@@ -3580,7 +3445,7 @@ local itemData = {
 
 	[89273] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18968, 18977, 18659, 18973, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
 			},
 		},
@@ -3588,7 +3453,7 @@ local itemData = {
 	},
 	[89276] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18966, 18975, 18657, 18970, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
 			},
 		},
@@ -3596,7 +3461,7 @@ local itemData = {
 	},
 	[89264] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18969, 18979, 17946, 18971, -- Rogue, Death Knight, Mage, Druid Chest Slot IDs
 			},
 		},
@@ -3604,7 +3469,7 @@ local itemData = {
 	},
 	[89270] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18715, 18978, 17947, 18974, -- Rogue, Death Knight, Mage, Druid Hand Slot IDs
 			},
 		},
@@ -3612,7 +3477,7 @@ local itemData = {
 	},
 	[89267] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				18967, 18976, 18660, 18972, -- Rogue, Death Knight, Mage, Druid Leg Slot IDs
 			},
 		},
@@ -3623,10 +3488,7 @@ local itemData = {
 	-- Heart of Fear (Normal)
 	[89235] = {
 		Items = {
-			[RAID_FINDER] = {
-				18021, 18585, 18093,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18021, 18585, 18093,
 			},
 		},
@@ -3634,10 +3496,7 @@ local itemData = {
 	},
 	[89246] = {
 		Items = {
-			[RAID_FINDER] = {
-				18023, 18584, 18089,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18023, 18584, 18089,
 			},
 		},
@@ -3645,10 +3504,7 @@ local itemData = {
 	},
 	[89237] = {
 		Items = {
-			[RAID_FINDER] = {
-				18019, 17694, 18091,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18019, 17694, 18091,
 			},
 		},
@@ -3656,10 +3512,7 @@ local itemData = {
 	},
 	[89240] = {
 		Items = {
-			[RAID_FINDER] = {
-				18020, 17695, 18092,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18020, 17695, 18092,
 			},
 		},
@@ -3667,10 +3520,7 @@ local itemData = {
 	},
 	[89243] = {
 		Items = {
-			[RAID_FINDER] = {
-				18022, 17697, 18094,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18022, 17697, 18094,
 			},
 		},
@@ -3679,10 +3529,7 @@ local itemData = {
 
 	[89236] = {
 		Items = {
-			[RAID_FINDER] = {
-				18158, 18566, 18560, 18593,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18158, 18566, 18560, 18593,
 			},
 		},
@@ -3690,10 +3537,7 @@ local itemData = {
 	},
 	[89247] = {
 		Items = {
-			[RAID_FINDER] = {
-				18160, 18564, 18558, 18591,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18160, 18564, 18558, 18591,
 			},
 		},
@@ -3701,10 +3545,7 @@ local itemData = {
 	},
 	[89238] = {
 		Items = {
-			[RAID_FINDER] = {
-				18156, 18568, 18563, 18595,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18156, 18568, 18563, 18595,
 			},
 		},
@@ -3712,10 +3553,7 @@ local itemData = {
 	},
 	[89241] = {
 		Items = {
-			[RAID_FINDER] = {
-				18157, 18567, 18561, 18594,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18157, 18567, 18561, 18594,
 			},
 		},
@@ -3723,10 +3561,7 @@ local itemData = {
 	},
 	[89244] = {
 		Items = {
-			[RAID_FINDER] = {
-				18159, 18565, 18559, 18592,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18159, 18565, 18559, 18592,
 			},
 		},
@@ -3735,10 +3570,7 @@ local itemData = {
 
 	[89234] = {
 		Items = {
-			[RAID_FINDER] = {
-				18571, 18581, 18589, 18577,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18571, 18581, 18589, 18577,
 			},
 		},
@@ -3746,10 +3578,7 @@ local itemData = {
 	},
 	[89248] = {
 		Items = {
-			[RAID_FINDER] = {
-				18569, 18579, 18586, 18574,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18569, 18579, 18586, 18574,
 			},
 		},
@@ -3757,10 +3586,7 @@ local itemData = {
 	},
 	[89239] = {
 		Items = {
-			[RAID_FINDER] = {
-				18573, 18583, 18587, 18575,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18573, 18583, 18587, 18575,
 			},
 		},
@@ -3768,10 +3594,7 @@ local itemData = {
 	},
 	[89242] = {
 		Items = {
-			[RAID_FINDER] = {
-				18572, 18582, 18590, 18578,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18572, 18582, 18590, 18578,
 			},
 		},
@@ -3779,10 +3602,7 @@ local itemData = {
 	},
 	[89245] = {
 		Items = {
-			[RAID_FINDER] = {
-				18570, 18580, 18588, 18576,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				18570, 18580, 18588, 18576,
 			},
 		},
@@ -3793,10 +3613,7 @@ local itemData = {
 	-- Heart of Fear (Heroic)
 	[89259] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18044, 18585, 18075,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18044, 18585, 18075,
 			},
 		},
@@ -3804,10 +3621,7 @@ local itemData = {
 	},
 	[89262] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18046, 19088, 18071,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18046, 19088, 18071,
 			},
 		},
@@ -3815,10 +3629,7 @@ local itemData = {
 	},
 	[89250] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18042, 17703, 18073,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18042, 17703, 18073,
 			},
 		},
@@ -3826,10 +3637,7 @@ local itemData = {
 	},
 	[89256] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18043, 17704, 18074,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18043, 17704, 18074,
 			},
 		},
@@ -3837,10 +3645,7 @@ local itemData = {
 	},
 	[89253] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18045, 17706, 19058,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18045, 17706, 19058,
 			},
 		},
@@ -3849,10 +3654,7 @@ local itemData = {
 
 	[89260] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18172, 19063, 19069, 18806,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18172, 19063, 19069, 18806,
 			},
 		},
@@ -3860,10 +3662,7 @@ local itemData = {
 	},
 	[89263] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18174, 19065, 19095, 18811,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18174, 19065, 19095, 18811,
 			},
 		},
@@ -3871,10 +3670,7 @@ local itemData = {
 	},
 	[89251] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18170, 19061, 19093, 18808,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18170, 19061, 19093, 18808,
 			},
 		},
@@ -3882,10 +3678,7 @@ local itemData = {
 	},
 	[89257] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18171, 19062, 19094, 18809,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18171, 19062, 19094, 18809,
 			},
 		},
@@ -3893,10 +3686,7 @@ local itemData = {
 	},
 	[89254] = {
 		Items = {
-			[RAID_NORMAL] = {
-				18173, 19064, 19076, 18810,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				18173, 19064, 19076, 18810,
 			},
 		},
@@ -3905,10 +3695,7 @@ local itemData = {
 
 	[89258] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19085, 19036, 18668, 19041,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				19085, 19036, 18668, 19041,
 			},
 		},
@@ -3916,10 +3703,7 @@ local itemData = {
 	},
 	[89261] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19092, 19038, 18664, 19043,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				19092, 19038, 18664, 19043,
 			},
 		},
@@ -3927,10 +3711,7 @@ local itemData = {
 	},
 	[89249] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19089, 19034, 18666, 19039,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				19089, 19034, 18666, 19039,
 			},
 		},
@@ -3938,10 +3719,7 @@ local itemData = {
 	},
 	[89255] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19090, 19035, 18667, 19040,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				19090, 19035, 18667, 19040,
 			},
 		},
@@ -3949,10 +3727,7 @@ local itemData = {
 	},
 	[89252] = {
 		Items = {
-			[RAID_NORMAL] = {
-				19091, 19037, 18669, 19042,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				19091, 19037, 18669, 19042,
 			},
 		},
@@ -3965,7 +3740,7 @@ local itemData = {
 	-- Dragon Soul (LFR)
 	[78869] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16862, 17037, 16549, -- Paladin, Priest, Warlock Head Slot IDs
 			},
 		},
@@ -3973,7 +3748,7 @@ local itemData = {
 	},
 	[78875] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16864, 17033, 16545, -- Paladin, Priest, Warlock Shoulder Slot IDs
 			},
 		},
@@ -3981,7 +3756,7 @@ local itemData = {
 	},
 	[78863] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16860, 17035, 16547, -- Paladin, Priest, Warlock Chest Slot IDs
 			},
 		},
@@ -3989,7 +3764,7 @@ local itemData = {
 	},
 	[78866] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16861, 17036, 16548, -- Paladin, Priest, Warlock Hand Slot IDs
 			},
 		},
@@ -3997,7 +3772,7 @@ local itemData = {
 	},
 	[78872] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16863, 17038, 16550, -- Paladin, Priest, Warlock Leg Slot IDs
 			},
 		},
@@ -4006,7 +3781,7 @@ local itemData = {
 
 	[78870] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16699, 16852, 16736, -- Warrior, Hunter, Shaman Head Slot IDs
 			},
 		},
@@ -4014,7 +3789,7 @@ local itemData = {
 	},
 	[78876] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16697, 16855, 17150, -- Warrior, Hunter, Shaman Shoulder Slot IDs
 			},
 		},
@@ -4022,7 +3797,7 @@ local itemData = {
 	},
 	[78864] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16701, 16850, 16740, -- Warrior, Hunter, Shaman Chest Slot IDs
 			},
 		},
@@ -4030,7 +3805,7 @@ local itemData = {
 	},
 	[78867] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16700, 16857, 16735, -- Warrior, Hunter, Shaman Hand Slot IDs
 			},
 		},
@@ -4038,7 +3813,7 @@ local itemData = {
 	},
 	[78873] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16698, 16854, 16737, -- Warrior, Hunter, Shaman Leg Slot IDs
 			},
 		},
@@ -4047,7 +3822,7 @@ local itemData = {
 
 	[78868] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16722, 16839, 16649, 16628, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
 			},
 		},
@@ -4055,7 +3830,7 @@ local itemData = {
 	},
 	[78874] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16724, 16837, 16652, 16631, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
 			},
 		},
@@ -4063,7 +3838,7 @@ local itemData = {
 	},
 	[78862] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16720, 16841, 16651, 16630, -- Rogue, Death Knight, Mage, Druid Chest Slot IDs
 			},
 		},
@@ -4071,7 +3846,7 @@ local itemData = {
 	},
 	[78865] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16721, 16840, 16648, 16627, -- Rogue, Death Knight, Mage, Druid Hand Slot IDs
 			},
 		},
@@ -4079,7 +3854,7 @@ local itemData = {
 	},
 	[78871] = {
 		Items = {
-			[RAID_FINDER_EXT] = {
+			[ANY] = {
 				16723, 17159, 16650, 16629, -- Rogue, Death Knight, Mage, Druid Leg Slot IDs
 			},
 		},
@@ -4091,10 +3866,7 @@ local itemData = {
 	-- Dragon Soul (Normal)
 	[78182] = {
 		Items = {
-			[RAID_FINDER] = {
-				16870, 16918, 16558,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16870, 16918, 16558,
 			},
 		},
@@ -4102,10 +3874,7 @@ local itemData = {
 	},
 	[78180] = {
 		Items = {
-			[RAID_FINDER] = {
-				16871, 16916, 16554,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16871, 16916, 16554,
 			},
 		},
@@ -4113,10 +3882,7 @@ local itemData = {
 	},
 	[78184] = {
 		Items = {
-			[RAID_FINDER] = {
-				16868, 16917, 16556,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16868, 16917, 16556,
 			},
 		},
@@ -4124,10 +3890,7 @@ local itemData = {
 	},
 	[78183] = {
 		Items = {
-			[RAID_FINDER] = {
-				16869, 16919, 16557,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16869, 16919, 16557,
 			},
 		},
@@ -4135,10 +3898,7 @@ local itemData = {
 	},
 	[78181] = {
 		Items = {
-			[RAID_FINDER] = {
-				15980, 15979, 16559,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				15980, 15979, 16559,
 			},
 		},
@@ -4147,10 +3907,7 @@ local itemData = {
 
 	[78177] = {
 		Items = {
-			[RAID_FINDER] = {
-				16694, 16845, 16752,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16694, 16845, 16752,
 			},
 		},
@@ -4158,10 +3915,7 @@ local itemData = {
 	},
 	[78175] = {
 		Items = {
-			[RAID_FINDER] = {
-				16695, 16847, 16984,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16695, 16847, 16984,
 			},
 		},
@@ -4169,10 +3923,7 @@ local itemData = {
 	},
 	[78179] = {
 		Items = {
-			[RAID_FINDER] = {
-				16692, 16844, 16754,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16692, 16844, 16754,
 			},
 		},
@@ -4180,10 +3931,7 @@ local itemData = {
 	},
 	[78178] = {
 		Items = {
-			[RAID_FINDER] = {
-				16693, 16849, 16753,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16693, 16849, 16753,
 			},
 		},
@@ -4191,10 +3939,7 @@ local itemData = {
 	},
 	[78176] = {
 		Items = {
-			[RAID_FINDER] = {
-				15982, 15985, 15986,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				15982, 15985, 15986,
 			},
 		},
@@ -4203,10 +3948,7 @@ local itemData = {
 
 	[78172] = {
 		Items = {
-			[RAID_FINDER] = {
-				16730, 16823, 16667, 16635,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16730, 16823, 16667, 16635,
 			},
 		},
@@ -4214,10 +3956,7 @@ local itemData = {
 	},
 	[78170] = {
 		Items = {
-			[RAID_FINDER] = {
-				16731, 16822, 16669, 16633,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16731, 16822, 16669, 16633,
 			},
 		},
@@ -4225,10 +3964,7 @@ local itemData = {
 	},
 	[78174] = {
 		Items = {
-			[RAID_FINDER] = {
-				16728, 16825, 16668, 16634,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16728, 16825, 16668, 16634,
 			},
 		},
@@ -4236,10 +3972,7 @@ local itemData = {
 	},
 	[78173] = {
 		Items = {
-			[RAID_FINDER] = {
-				16729, 16824, 16666, 16636,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				16729, 16824, 16666, 16636,
 			},
 		},
@@ -4247,10 +3980,7 @@ local itemData = {
 	},
 	[78171] = {
 		Items = {
-			[RAID_FINDER] = {
-				15983, 15981, 15978, 15984,
-			},
-			[RAID_HEROIC] = {
+			[ANY] = {
 				15983, 15981, 15978, 15984,
 			},
 		},
@@ -4262,10 +3992,7 @@ local itemData = {
 	-- Dragon Soul (Heroic)
 	[78850] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16876, 17049, 16540,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16876, 17049, 16540,
 			},
 		},
@@ -4273,10 +4000,7 @@ local itemData = {
 	},
 	[78859] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16878, 17045, 16536,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16878, 17045, 16536,
 			},
 		},
@@ -4284,10 +4008,7 @@ local itemData = {
 	},
 	[78847] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16874, 17047, 16538,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16874, 17047, 16538,
 			},
 		},
@@ -4295,10 +4016,7 @@ local itemData = {
 	},
 	[78853] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16875, 17048, 16539,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16875, 17048, 16539,
 			},
 		},
@@ -4306,10 +4024,7 @@ local itemData = {
 	},
 	[78856] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16877, 17050, 16541,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16877, 17050, 16541,
 			},
 		},
@@ -4318,10 +4033,7 @@ local itemData = {
 
 	[78851] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16686, 16816, 16745,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16686, 16816, 16745,
 			},
 		},
@@ -4329,10 +4041,7 @@ local itemData = {
 	},
 	[78860] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16688, 16819, 17149,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16688, 16819, 17149,
 			},
 		},
@@ -4340,10 +4049,7 @@ local itemData = {
 	},
 	[78848] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16684, 16814, 16741,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16684, 16814, 16741,
 			},
 		},
@@ -4351,10 +4057,7 @@ local itemData = {
 	},
 	[78854] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16685, 16821, 16746,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16685, 16821, 16746,
 			},
 		},
@@ -4362,10 +4065,7 @@ local itemData = {
 	},
 	[78857] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16687, 16818, 16744,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16687, 16818, 16744,
 			},
 		},
@@ -4374,10 +4074,7 @@ local itemData = {
 
 	[78852] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16714, 16831, 16658, 16618,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16714, 16831, 16658, 16618,
 			},
 		},
@@ -4385,10 +4082,7 @@ local itemData = {
 	},
 	[78861] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16716, 16829, 16661, 16613,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16716, 16829, 16661, 16613,
 			},
 		},
@@ -4396,10 +4090,7 @@ local itemData = {
 	},
 	[78849] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16712, 16833, 16660, 16623,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16712, 16833, 16660, 16623,
 			},
 		},
@@ -4407,10 +4098,7 @@ local itemData = {
 	},
 	[78855] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16713, 16832, 16657, 16615,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16713, 16832, 16657, 16615,
 			},
 		},
@@ -4418,10 +4106,7 @@ local itemData = {
 	},
 	[78858] = {
 		Items = {
-			[RAID_NORMAL] = {
-				16715, 16830, 16659, 16614,
-			},
-			[RAID_MYTHIC] = {
+			[ANY] = {
 				16715, 16830, 16659, 16614,
 			},
 		},
@@ -4676,14 +4361,8 @@ local itemData = {
 	-- Bastion of Twilight / Throne of the Four Winds (Normal)
 	[63683] = {
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				14049, 14024, 14098, -- Paladin, Priest, Warlock Head Slot IDs
-			},
-			[RAID_HEROIC] = {
-				14049, 14024, 14098,
-			},
-			[RAID_FINDER_EXT] = {
-				14049, 14024, 14098,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -4691,14 +4370,8 @@ local itemData = {
 	},
 	[64315] = {
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				13974, 13993, 14099, -- Paladin, Priest, Warlock Shoulder Slot IDs
-			},
-			[RAID_HEROIC] = {
-				13974, 13993, 14099,
-			},
-			[RAID_FINDER_EXT] = {
-				13974, 13993, 14099,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -4706,28 +4379,16 @@ local itemData = {
 
 	[63684] = {
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				13997, 14048, 14036, -- Warrior, Hunter, Shaman Head Slot IDs
-			},
-			[RAID_HEROIC] = {
-				13997, 14048, 14036,
-			},
-			[RAID_FINDER_EXT] = {
-				13997, 14048, 14036,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[64316] = {
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				14004, 13964, 14050, -- Warrior, Hunter, Shaman Shoulder Slot IDs
-			},
-			[RAID_HEROIC] = {
-				14004, 13964, 14050,
-			},
-			[RAID_FINDER_EXT] = {
-				14004, 13964, 14050,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -4735,28 +4396,16 @@ local itemData = {
 
 	[63682] = {
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				14041, 14040, 13963, 13975, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
-			},
-			[RAID_HEROIC] = {
-				14041, 14040, 13963, 13975,
-			},
-			[RAID_FINDER_EXT] = {
-				14041, 14040, 13963, 13975,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[64314] = {
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				13950, 14082, 13984, 13962, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
-			},
-			[RAID_HEROIC] = {
-				13950, 14082, 13984, 13962,
-			},
-			[RAID_FINDER_EXT] = {
-				13950, 14082, 13984, 13962,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -4765,13 +4414,7 @@ local itemData = {
 	-- Bastion of Twilight (Heroic)
 	[65001] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14755, 14710, 14775,
-			},
-			[RAID_MYTHIC] = {
-				14755, 14710, 14775,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14755, 14710, 14775,
 			},
 		},
@@ -4779,13 +4422,7 @@ local itemData = {
 	},
 	[65088] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14738, 14723, 14776,
-			},
-			[RAID_MYTHIC] = {
-				14738, 14723, 14776,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14738, 14723, 14776,
 			},
 		},
@@ -4793,13 +4430,7 @@ local itemData = {
 	},
 	[67423] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14722, 14763, 14705,
-			},
-			[RAID_MYTHIC] = {
-				14722, 14763, 14705,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14722, 14763, 14705,
 			},
 		},
@@ -4807,13 +4438,7 @@ local itemData = {
 	},
 	[67429] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14715, 14736, 14759,
-			},
-			[RAID_MYTHIC] = {
-				14715, 14736, 14759,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14715, 14736, 14759,
 			},
 		},
@@ -4821,13 +4446,7 @@ local itemData = {
 	},
 	[67428] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14765, 14716, 14724,
-			},
-			[RAID_MYTHIC] = {
-				14765, 14716, 14724,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14765, 14716, 14724,
 			},
 		},
@@ -4836,13 +4455,7 @@ local itemData = {
 
 	[65000] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14719, 14757, 14764,
-			},
-			[RAID_MYTHIC] = {
-				14719, 14757, 14764,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14719, 14757, 14764,
 			},
 		},
@@ -4850,13 +4463,7 @@ local itemData = {
 	},
 	[65087] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14712, 14743, 14754,
-			},
-			[RAID_MYTHIC] = {
-				14712, 14743, 14754,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14712, 14743, 14754,
 			},
 		},
@@ -4864,13 +4471,7 @@ local itemData = {
 	},
 	[67424] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14761, 14718, 14703,
-			},
-			[RAID_MYTHIC] = {
-				14761, 14718, 14703,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14761, 14718, 14703,
 			},
 		},
@@ -4878,13 +4479,7 @@ local itemData = {
 	},
 	[67430] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14741, 14767, 14730,
-			},
-			[RAID_MYTHIC] = {
-				14741, 14767, 14730,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14741, 14767, 14730,
 			},
 		},
@@ -4892,13 +4487,7 @@ local itemData = {
 	},
 	[67427] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14758, 14090, 14751,
-			},
-			[RAID_MYTHIC] = {
-				14758, 14090, 14751,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14758, 14090, 14751,
 			},
 		},
@@ -4907,13 +4496,7 @@ local itemData = {
 
 	[65002] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14760, 14749, 14095, 14737,
-			},
-			[RAID_MYTHIC] = {
-				14760, 14749, 14095, 14737,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14760, 14749, 14095, 14737,
 			},
 		},
@@ -4921,13 +4504,7 @@ local itemData = {
 	},
 	[65089] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14746, 14752, 14729, 14706,
-			},
-			[RAID_MYTHIC] = {
-				14746, 14752, 14729, 14706,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14746, 14752, 14729, 14706,
 			},
 		},
@@ -4935,13 +4512,7 @@ local itemData = {
 	},
 	[67425] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14731, 14733, 14709, 14725,
-			},
-			[RAID_MYTHIC] = {
-				14731, 14733, 14709, 14725,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14731, 14733, 14709, 14725,
 			},
 		},
@@ -4949,13 +4520,7 @@ local itemData = {
 	},
 	[67431] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14742, 14772, 14773, 14753,
-			},
-			[RAID_MYTHIC] = {
-				14742, 14772, 14773, 14753,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14742, 14772, 14773, 14753,
 			},
 		},
@@ -4963,13 +4528,7 @@ local itemData = {
 	},
 	[67426] = {
 		Items = {
-			[RAID_NORMAL] = {
-				14720, 14732, 14774, 14714,
-			},
-			[RAID_MYTHIC] = {
-				14720, 14732, 14774, 14714,
-			},
-			[RAID_FINDER] = {
+			[ANY] = {
 				14720, 14732, 14774, 14714,
 			},
 		},
@@ -5226,85 +4785,40 @@ local itemData = {
 	-- Ulduar (10)
 	[45647] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11421, 11427, 11443, -- Paladin, Priest, Warlock Head Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11421, 11427, 11443,
-			},
-			[RAID_MYTHIC] = {
-				11421, 11427, 11443,
-			},
-			[RAID_HEROIC] = {
-				11421, 11427, 11443,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45659] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11422, 11431, 11447, -- Paladin, Priest, Warlock Shoulder Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11422, 11431, 11447,
-			},
-			[RAID_MYTHIC] = {
-				11422, 11431, 11447,
-			},
-			[RAID_HEROIC] = {
-				11422, 11431, 11447,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45635] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11423, 11430, 11446, -- Paladin, Priest, Warlock Chest Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11423, 11430, 11446,
-			},
-			[RAID_MYTHIC] = {
-				11423, 11430, 11446,
-			},
-			[RAID_HEROIC] = {
-				11423, 11430, 11446,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45644] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11419, 11428, 11444, -- Paladin, Priest, Warlock Hand Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11419, 11428, 11444,
-			},
-			[RAID_MYTHIC] = {
-				11419, 11428, 11444,
-			},
-			[RAID_HEROIC] = {
-				11419, 11428, 11444,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45650] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11420, 11429, 11445, -- Paladin, Priest, Warlock Leg Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11420, 11429, 11445,
-			},
-			[RAID_MYTHIC] = {
-				11420, 11429, 11445,
-			},
-			[RAID_HEROIC] = {
-				11420, 11429, 11445,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5312,85 +4826,40 @@ local itemData = {
 
 	[45648] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11450, 11411, 11438, -- Warrior, Hunter, Shaman Head Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11450, 11411, 11438,
-			},
-			[RAID_MYTHIC] = {
-				11450, 11411, 11438,
-			},
-			[RAID_HEROIC] = {
-				11450, 11411, 11438,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45660] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11453, 11413, 11440, -- Warrior, Hunter, Shaman Shoulder Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11453, 11413, 11440,
-			},
-			[RAID_MYTHIC] = {
-				11453, 11413, 11440,
-			},
-			[RAID_HEROIC] = {
-				11453, 11413, 11440,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45636] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11449, 11414, 11441, -- Warrior, Hunter, Shaman Chest Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11449, 11414, 11441,
-			},
-			[RAID_MYTHIC] = {
-				11449, 11414, 11441,
-			},
-			[RAID_HEROIC] = {
-				11449, 11414, 11441,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45645] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11451, 11410, 11437, -- Warrior, Hunter, Shaman Hand Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11451, 11410, 11437,
-			},
-			[RAID_MYTHIC] = {
-				11451, 11410, 11437,
-			},
-			[RAID_HEROIC] = {
-				11451, 11410, 11437,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45651] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11452, 11412, 11439, -- Warrior, Hunter, Shaman Leg Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11452, 11412, 11439,
-			},
-			[RAID_MYTHIC] = {
-				11452, 11412, 11439,
-			},
-			[RAID_HEROIC] = {
-				11452, 11412, 11439,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5398,85 +4867,40 @@ local itemData = {
 
 	[45649] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11434, 11400, 11415, 11405, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11434, 11400, 11415, 11405,
-			},
-			[RAID_MYTHIC] = {
-				11434, 11400, 11415, 11405,
-			},
-			[RAID_HEROIC] = {
-				11434, 11400, 11415, 11405,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45661] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11436, 11403, 11418, 11408, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11436, 11403, 11418, 11408,
-			},
-			[RAID_MYTHIC] = {
-				11436, 11403, 11418, 11408,
-			},
-			[RAID_HEROIC] = {
-				11436, 11403, 11418, 11408,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45637] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11432, 11399, 11417, 11409, -- Rogue, Death Knight, Mage, Druid Chest Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11432, 11399, 11417, 11409,
-			},
-			[RAID_MYTHIC] = {
-				11432, 11399, 11417, 11409,
-			},
-			[RAID_HEROIC] = {
-				11432, 11399, 11417, 11409,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45646] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11433, 11401, 11652, 11404, -- Rogue, Death Knight, Mage, Druid Hand Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11433, 11401, 11652, 11404,
-			},
-			[RAID_MYTHIC] = {
-				11433, 11401, 11652, 11404,
-			},
-			[RAID_HEROIC] = {
-				11433, 11401, 11652, 11404,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45652] = {
 		Items = {
-			[RAID_NORMAL] = { -- RAID_NORMAL
+			[ANY] = {
 				11435, 11402, 11416, 11406, -- Rogue, Death Knight, Mage, Druid Leg Slot IDs
-			},
-			[RAID_NORMAL_25] = { -- RAID_NORMAL_25
-				11435, 11402, 11416, 11406,
-			},
-			[RAID_MYTHIC] = {
-				11435, 11402, 11416, 11406,
-			},
-			[RAID_HEROIC] = {
-				11435, 11402, 11416, 11406,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -5487,85 +4911,40 @@ local itemData = {
 	-- Ulduar (25)
 	[45638] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11668, 11678, 11657, -- Paladin, Priest, Warlock Head Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11668, 11678, 11657,
-			},
-			[RAID_MYTHIC] = {
-				11668, 11678, 11657,
-			},
-			[RAID_HEROIC] = {
-				11668, 11678, 11657,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45656] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11664, 11675, 11655, -- Paladin, Priest, Warlock Shoulder Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11664, 11675, 11655,
-			},
-			[RAID_MYTHIC] = {
-				11664, 11675, 11655,
-			},
-			[RAID_HEROIC] = {
-				11664, 11675, 11655,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45632] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11666, 11676, 11656, -- Paladin, Priest, Warlock Chest Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11666, 11676, 11656,
-			},
-			[RAID_MYTHIC] = {
-				11666, 11676, 11656,
-			},
-			[RAID_HEROIC] = {
-				11666, 11676, 11656,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45641] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11667, 11674, 11654, -- Paladin, Priest, Warlock Hand Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11667, 11674, 11654,
-			},
-			[RAID_MYTHIC] = {
-				11667, 11674, 11654,
-			},
-			[RAID_HEROIC] = {
-				11667, 11674, 11654,
 			},
 		},
 		Classes = CLASS_GROUP_5,
 	},
 	[45653] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11665, 11677, 11566, -- Paladin, Priest, Warlock Leg Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11665, 11677, 11566,
-			},
-			[RAID_MYTHIC] = {
-				11665, 11677, 11566,
-			},
-			[RAID_HEROIC] = {
-				11665, 11677, 11566,
 			},
 		},
 		Classes = CLASS_GROUP_5,
@@ -5573,85 +4952,40 @@ local itemData = {
 
 	[45639] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11663, 11659, 11681, -- Warrior, Hunter, Shaman Head Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11663, 11659, 11681,
-			},
-			[RAID_MYTHIC] = {
-				11663, 11659, 11681,
-			},
-			[RAID_HEROIC] = {
-				11663, 11659, 11681,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45657] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11662, 11660, 11683, -- Warrior, Hunter, Shaman Shoulder Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11662, 11660, 11683,
-			},
-			[RAID_MYTHIC] = {
-				11662, 11660, 11683,
-			},
-			[RAID_HEROIC] = {
-				11662, 11660, 11683,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45633] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11661, 11658, 11679, -- Warrior, Hunter, Shaman Chest Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11661, 11658, 11679,
-			},
-			[RAID_MYTHIC] = {
-				11661, 11658, 11679,
-			},
-			[RAID_HEROIC] = {
-				11661, 11658, 11679,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45642] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11560, 11561, 11680, -- Warrior, Hunter, Shaman Hand Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11560, 11561, 11680,
-			},
-			[RAID_MYTHIC] = {
-				11560, 11561, 11680,
-			},
-			[RAID_HEROIC] = {
-				11560, 11561, 11680,
 			},
 		},
 		Classes = CLASS_GROUP_6,
 	},
 	[45654] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11563, 11565, 11682, -- Warrior, Hunter, Shaman Leg Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11563, 11565, 11682,
-			},
-			[RAID_MYTHIC] = {
-				11563, 11565, 11682,
-			},
-			[RAID_HEROIC] = {
-				11563, 11565, 11682,
 			},
 		},
 		Classes = CLASS_GROUP_6,
@@ -5659,85 +4993,40 @@ local itemData = {
 
 	[45640] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11647, 10325, 11650, 11673, -- Rogue, Death Knight, Mage, Druid Head Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11647, 10325, 11650, 11673,
-			},
-			[RAID_MYTHIC] = {
-				11647, 10325, 11650, 11673,
-			},
-			[RAID_HEROIC] = {
-				11647, 10325, 11650, 11673,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45658] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11649, 10328, 10463, 11669, -- Rogue, Death Knight, Mage, Druid Shoulder Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11649, 10328, 10463, 11669,
-			},
-			[RAID_MYTHIC] = {
-				11649, 10328, 10463, 11669,
-			},
-			[RAID_HEROIC] = {
-				11649, 10328, 10463, 11669,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45634] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11645, 10326, 11651, 11671, -- Rogue, Death Knight, Mage, Druid Chest Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11645, 10326, 11651, 11671,
-			},
-			[RAID_MYTHIC] = {
-				11645, 10326, 11651, 11671,
-			},
-			[RAID_HEROIC] = {
-				11645, 10326, 11651, 11671,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45643] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11646, 10329, 10461, 11670, -- Rogue, Death Knight, Mage, Druid Hand Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11646, 10329, 10461, 11670,
-			},
-			[RAID_MYTHIC] = {
-				11646, 10329, 10461, 11670,
-			},
-			[RAID_HEROIC] = {
-				11646, 10329, 10461, 11670,
 			},
 		},
 		Classes = CLASS_GROUP_7,
 	},
 	[45655] = {
 		Items = {
-			[RAID_NORMAL_10] = { -- RAID_NORMAL_10
+			[ANY] = {
 				11648, 10327, 11653, 11672, -- Rogue, Death Knight, Mage, Druid Leg Slot IDs
-			},
-			[RAID_NORMAL] = { -- RAID_NORMAL
-				11648, 10327, 11653, 11672,
-			},
-			[RAID_MYTHIC] = {
-				11648, 10327, 11653, 11672,
-			},
-			[RAID_HEROIC] = {
-				11648, 10327, 11653, 11672,
 			},
 		},
 		Classes = CLASS_GROUP_7,
@@ -6876,7 +6165,7 @@ local itemData = {
 	-- helm
 	[29760] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				7452, 6912, 7441, 6767, 7436, 6803,
 			},
 		},
@@ -6884,7 +6173,7 @@ local itemData = {
 	},
 	[29761] = { -- warrior, priest, druid
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				7431, 6397, 7446, 6916, 7467, 7054,
 			},
 		},
@@ -6892,7 +6181,7 @@ local itemData = {
 	},
 	[29759] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				7462, 7148, 7457, 6773, 7414, 6403,
 			},
 		},
@@ -6901,7 +6190,7 @@ local itemData = {
 	-- hand
 	[29757] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				7456, 6911, 7445, 6771, 7440, 6805,
 			},
 		},
@@ -6909,7 +6198,7 @@ local itemData = {
 	},
 	[29758] = { -- warrior, priest, druid
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				7435, 6400, 7450, 6915, 7471, 7053,
 			},
 		},
@@ -6917,7 +6206,7 @@ local itemData = {
 	},
 	[29756] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_FINDER] = {
+			[ANY] = {
 				7466, 7152, 7461, 6775, 7419, 6406,
 			},
 		},
@@ -6928,7 +6217,7 @@ local itemData = {
 	-- shoulders
 	[29763] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7455, 6914, 7444, 6769, 7439, 6804,
 			},
 		},
@@ -6936,7 +6225,7 @@ local itemData = {
 	},
 	[29764] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7434, 6398, 7449, 6918, 7470, 7056,
 			},
 		},
@@ -6944,7 +6233,7 @@ local itemData = {
 	},
 	[29762] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7465, 7150, 7460, 6772, 7418, 6404,
 			},
 		},
@@ -6954,7 +6243,7 @@ local itemData = {
 	-- legs
 	[29766] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7454, 6913, 7443, 6770, 7438, 6806,
 			},
 		},
@@ -6962,7 +6251,7 @@ local itemData = {
 	},
 	[29767] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7433, 6399, 7448, 6917, 7469, 7055,
 			},
 		},
@@ -6970,7 +6259,7 @@ local itemData = {
 	},
 	[29765] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7464, 7149, 7459, 6776, 7417, 6405,
 			},
 		},
@@ -6981,7 +6270,7 @@ local itemData = {
 	-- chest
 	[29754] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7453, 6910, 7442, 6768, 7437, 6802,
 			},
 		},
@@ -6989,7 +6278,7 @@ local itemData = {
 	},
 	[29753] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7432, 6396, 7447, 6919, 7468, 7057,
 			},
 		},
@@ -6997,7 +6286,7 @@ local itemData = {
 	},
 	[29755] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7463, 7151, 7458, 6774, 7415, 6402,
 			},
 		},
@@ -7010,7 +6299,7 @@ local itemData = {
 	-- hand
 	[30239] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7815, 8310, 7825, 8314, 7837, 8318,
 			},
 		},
@@ -7018,7 +6307,7 @@ local itemData = {
 	},
 	[30240] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7810, 7914, 7831, 8322, 7857, 8299,
 			},
 		},
@@ -7026,7 +6315,7 @@ local itemData = {
 	},
 	[30241] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7820, 8295, 7847, 8329, 7851, 8304,
 			},
 		},
@@ -7036,7 +6325,7 @@ local itemData = {
 	-- helm
 	[30242] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7816, 8313, 7826, 8315, 7838, 8319,
 			},
 		},
@@ -7044,7 +6333,7 @@ local itemData = {
 	},
 	[30243] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7811, 7915, 7832, 8323, 7858, 8300,
 			},
 		},
@@ -7052,7 +6341,7 @@ local itemData = {
 	},
 	[30244] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7821, 8296, 7848, 8328, 7852, 8305,
 			},
 		},
@@ -7062,7 +6351,7 @@ local itemData = {
 	-- legs
 	[30245] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7817, 8311, 7828, 7742, 7839, 8320,
 			},
 		},
@@ -7070,7 +6359,7 @@ local itemData = {
 	},
 	[30246] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7812, 7916, 7833, 8324, 7859, 8301,
 			},
 		},
@@ -7078,7 +6367,7 @@ local itemData = {
 	},
 	[30247] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7822, 8297, 7849, 8331, 7853, 8306,
 			},
 		},
@@ -7090,7 +6379,7 @@ local itemData = {
 	-- chest
 	[30236] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7814, 8309, 7824, 8316, 7836, 8317,
 			},
 		},
@@ -7098,7 +6387,7 @@ local itemData = {
 	},
 	[30237] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7809, 7913, 7830, 8326, 7856, 8303,
 			},
 		},
@@ -7106,7 +6395,7 @@ local itemData = {
 	},
 	[30238] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7819, 8294, 7845, 8330, 7854, 8308,
 			},
 		},
@@ -7116,7 +6405,7 @@ local itemData = {
 	-- shoulders
 	[30248] = { -- paladin, rogue, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7818, 8312, 7829, 7778, 7840, 8321,
 			},
 		},
@@ -7124,7 +6413,7 @@ local itemData = {
 	},
 	[30249] = { -- warrior, priest, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7813, 7917, 7834, 8325, 7860, 8302,
 			},
 		},
@@ -7132,7 +6421,7 @@ local itemData = {
 	},
 	[30250] = { -- hunter, mage, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				7823, 8298, 7850, 8327, 7855, 8307,
 			},
 		},
@@ -7143,7 +6432,7 @@ local itemData = {
 	-- hands
 	[31092] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8063, 8310, 8102, 8322, 8092, 8304,
 			},
 		},
@@ -7151,7 +6440,7 @@ local itemData = {
 	},
 	[31094] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8058, 7914, 8069, 8295, 8074, 8318,
 			},
 		},
@@ -7159,7 +6448,7 @@ local itemData = {
 	},
 	[31093] = { -- rogue, mage, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8081, 8314, 8097, 8329, 8086, 8299,
 			},
 		},
@@ -7169,7 +6458,7 @@ local itemData = {
 	-- helm
 	[31097] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8064, 8313, 8104, 8323, 8093, 8305,
 			},
 		},
@@ -7177,7 +6466,7 @@ local itemData = {
 	},
 	[31095] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8059, 7915, 8070, 8296, 8076, 8319,
 			},
 		},
@@ -7185,7 +6474,7 @@ local itemData = {
 	},
 	[31096] = { -- rogue, mage, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8082, 8315, 8098, 8328, 8087, 8300,
 			},
 		},
@@ -7197,7 +6486,7 @@ local itemData = {
 	-- chest
 	[31089] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8065, 8309, 8105, 8326, 8094, 8308,
 			},
 		},
@@ -7205,7 +6494,7 @@ local itemData = {
 	},
 	[31091] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8060, 7913, 8071, 8294, 8078, 8317,
 			},
 		},
@@ -7213,7 +6502,7 @@ local itemData = {
 	},
 	[31090] = { -- rogue, mage, druid
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8083, 8316, 8099, 8330, 8088, 8303,
 			},
 		},
@@ -7223,7 +6512,7 @@ local itemData = {
 	-- legs
 	[31098] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8066, 8311, 8106, 8324, 8095, 8306,
 			},
 		},
@@ -7231,7 +6520,7 @@ local itemData = {
 	},
 	[31100] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8061, 7916, 8072, 8297, 8079, 8320,
 			},
 		},
@@ -7239,7 +6528,7 @@ local itemData = {
 	},
 	[31099] = { -- rogue, mage, druid
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8084, 7742, 8100, 8331, 8089, 8301,
 			},
 		},
@@ -7249,7 +6538,7 @@ local itemData = {
 	-- shoulders
 	[31101] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8067, 8312, 8107, 8325, 8096, 8307,
 			},
 		},
@@ -7257,7 +6546,7 @@ local itemData = {
 	},
 	[31103] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8062, 7917, 8073, 8298, 8080, 8321,
 			},
 		},
@@ -7265,7 +6554,7 @@ local itemData = {
 	},
 	[31102] = { -- rogue, mage, druid
 		Items = {
-			[RAID_NORMAL] = {
+			[ANY] = {
 				8085, 7778, 8101, 8327, 8091, 8302,
 			},
 		},
@@ -7277,7 +6566,7 @@ local itemData = {
 	
 	[34853] = { --Paladin, Priest, Warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8975, 8383, 8989, 8805, 8994, 8357,
 			},
 		},
@@ -7285,7 +6574,7 @@ local itemData = {
 	},
 	[34854] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8996, 8785, 8997, 8793, 8995, 8644,
 			},
 		},
@@ -7293,7 +6582,7 @@ local itemData = {
 	},
 	[34855] = { -- rogue, mage, druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				9002, 8362, 9001, 8808, 9000, 8795,
 			},
 		},
@@ -7303,7 +6592,7 @@ local itemData = {
 	-- boots
 	[34856] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				9003, 8801, 9004, 8807, 9005, 8799,
 			},
 		},
@@ -7311,7 +6600,7 @@ local itemData = {
 	},
 	[34857] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				9007, 8786, 9008, 8794, 9006, 8804,
 			},
 		},
@@ -7319,7 +6608,7 @@ local itemData = {
 	},
 	[34858] = { -- Rogue, Mage, Druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				9011, 8802, 9010, 8810, 9009, 8796,
 			},
 		},
@@ -7329,7 +6618,7 @@ local itemData = {
 	-- bracers
 	[34848] = { -- paladin, priest, warlock
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8956, 8800, 8957, 8806, 8958, 8798,
 			},
 		},
@@ -7337,7 +6626,7 @@ local itemData = {
 	},
 	[34851] = { -- warrior, hunter, shaman
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8960, 8787, 8961, 8792, 8959, 8803,
 			},
 		},
@@ -7345,7 +6634,7 @@ local itemData = {
 	},
 	[34852] = { -- Rogue, Mage, Druid
 		Items = {
-			[RAID_HEROIC] = {
+			[ANY] = {
 				8964, 8496, 8963, 8809, 8962, 8797,
 			},
 		},
