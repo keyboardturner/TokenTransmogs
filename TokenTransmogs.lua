@@ -1,6 +1,8 @@
 local addonName, TokenTransmogs = ...;
 
-local itemData = TokenTransmogs.itemData
+local itemData = TokenTransmogs.itemData;
+
+TokenTransmogs.forcedContexts = {};
 
 local strmatch = string.match;
 local GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
@@ -203,7 +205,10 @@ local function GetCollectionInfoForToken(itemLink)
 	local itemInfo = tokenID and itemData[tokenID];
 	if itemInfo then
 		local itemContext = GetItemContextFromLink(itemLink);
-		if not itemContext then 
+		local forcedContext = TokenTransmogs.forcedContexts[tokenID];
+		if forcedContext ~= nil then
+			itemContext = forcedContext;
+		elseif not itemContext then
 			itemContext = ANY;
 		end
 		
